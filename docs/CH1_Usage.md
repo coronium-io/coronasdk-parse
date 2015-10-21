@@ -18,7 +18,7 @@ local req = parse.request( parse.User.me )
 
 This will make a request to the Parse.com User endpoint, asking for the `me` resource.
 
-> A `parse.User.me` request returns meta for the currently logged in user.
+*A `parse.User.me` request returns meta for the currently logged in user.*
 
 __Additional parameters may be required depending on the endpoint.__
 
@@ -28,7 +28,7 @@ Example:
 local req = parse.request( parse.Object.update, "Pets", "1234abcd" )
 ```
 
-> A `parse.Object.update` request requires a __class__ and __objectId__ parameter.
+*A `parse.Object.update` request requires a __class__ and __objectId__ parameter.*
 
 # Response
 
@@ -63,7 +63,7 @@ The request methods are used in-between the request and response -- similar to m
 
 __:data( tbl_or_json )__
 
-The __data object__ to send to Parse. Can be a Lua table or raw JSON string. See [Using Raw JSON](UsingJson). When viewing the Parse.com docs, the curl __-d__ flag shown in the examples indicates the usage of `:data()` or `:set()` in the Corona plugin request.
+The __data object__ to send to Parse. Can be a Lua table or raw JSON string. When viewing the Parse.com docs, the curl __-d__ flag shown in the examples indicates the usage of `:data()` or `:set()` in the Corona plugin request.
 
 ___Setting :data() at anytime will clear any previous data for the request, including data added with the :set() method.___ There can on be only one __data object__ per request.
 
@@ -152,5 +152,3 @@ parse.request( parse.Objects.query, "Pets" )
   end
 end)
 ```
-
-:elephant:
