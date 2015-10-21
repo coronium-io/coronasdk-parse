@@ -1,10 +1,8 @@
-# Corona SDK Parse Plugin
-
-## JSON to Lua Rules
+# JSON to Lua Rules
 
 JSON "objects" and Lua tables have a similar looking structure, but differ in the following ways:
 
-#### General
+## General
 
 Lua uses an equal sign `=` as its setter. JSON uses a colon `:` as its setter. Both use curly braces as "objects":
 
@@ -20,7 +18,7 @@ var json_obj = { "username": "Jim", "age": 23 }
 
 JSON uses quoted strings as key names. This is optional for Lua in most cases (see Unique Keys).
 
-#### Arrays
+## Arrays
 
 Arrays in JSON are enclosed in brackets:
 
@@ -35,7 +33,7 @@ In __Lua__, use a table array instead:
 local tbl_arr = { 'green', 'blue', 'red' }
 ```
 
-#### Unique Keys
+## Unique Keys
 
 If you have a key with uncommon chars, spaces, etc., you must wrap it with brackets and quotes so that it will be converted to JSON properly from Lua.
 
@@ -65,7 +63,7 @@ local data_tbl = { color = "Green", dogs = 3 }
 local data_tbl = { score = { ["$gt"] = 200 } }
 ```
 
-## Conversions
+# Conversions
 
 In the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) you will see lots of usage examples. You need to do table conversions on the `data` you will send from Lua. In the examples, the `data` property is the __-d__ flag, followed by some JSON data.
 

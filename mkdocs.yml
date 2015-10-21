@@ -17,7 +17,6 @@ pages:
       - Chapter 1: CH1_Usage.md
       - Chapter 2: CH2_Usage.md
   - Development:
-      - Overview: Overview.md
       - Endpoints: Endpoints.md
       - Using Files: FileTransfer.md
       - Parse 2 Lua: Parse2Lua.md
