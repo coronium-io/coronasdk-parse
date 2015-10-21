@@ -61,8 +61,6 @@ end)
 
 The request methods are used in-between the request and response -- similar to middleware -- to perform certain functions depending upon the endpoint being used. The request methods are as follows, some are mutually exclusive for the request.
 
----
-
 __:data( tbl_or_json )__
 
 The __data object__ to send to Parse. Can be a Lua table or raw JSON string. See [Using Raw JSON](UsingJson). When viewing the Parse.com docs, the curl __-d__ flag shown in the examples indicates the usage of `:data()` or `:set()` in the Corona plugin request.
