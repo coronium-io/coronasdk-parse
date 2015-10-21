@@ -1,4 +1,4 @@
-<style>.codehilite{padding-top:2px;padding-bottom:6px;}</style>
+<style>.codehilite{padding-bottom:6px;}</style>
 
 # Apps [parse.App]
 
