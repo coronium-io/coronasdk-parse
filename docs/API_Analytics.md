@@ -19,4 +19,4 @@ Send a custom event to Parse.
 ```lua
   parse.request( parse.Analytics.event )
   :response(cb)
-```
+  ```

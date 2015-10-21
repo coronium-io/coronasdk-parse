@@ -72,7 +72,7 @@ __.link__
 
 __.delete__
 
-See also [Working with Files](FileTransfer.md)
+See also [Working with Files](CH5_Usage.md)
 
 ## Analytics [parse.Analytics]
 
