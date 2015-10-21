@@ -2,12 +2,6 @@
 
 Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to learn how to use the API.
 
-## Plugin Config
-
-TODO
-
----
-
 Following a few rules, all JSON example data can be converted into a Lua table structure.
 
 ```lua
