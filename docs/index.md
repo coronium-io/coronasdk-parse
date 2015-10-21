@@ -6,22 +6,9 @@ Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guid
 
 Following a few rules, all JSON example data can be converted into a Lua table structure.
 
-```lua
-local code = "This is some code"
-function main()
-  return false
-end
-```
-
 *You can also use raw JSON strings in certain methods, if preferable.*
 
-## Topics
-
-##### [Parse Plugin - An Overview](Overview.md)
-##### [Rules for Parse to Lua Conversion](Parse2Lua.md)
-##### [Parse Plugin - Endpoint Meta](Endpoints.md)
-
-## API
+## API Directory
 
 #### [Objects](API_Objects.md)
 #### [Users](API_Users.md)
@@ -37,3 +24,5 @@ end
 #### [Apps](API_Apps.md)
 #### [Hooks](API_Hooks.md)
 #### [Triggers](API_Triggers.md)
+
+:elephant:
