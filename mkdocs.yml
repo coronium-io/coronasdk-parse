@@ -9,6 +9,7 @@ markdown_extensions:
   - fenced_code
   - codehilite:
       guess_lang: False
+      noclasses: True
       pygments_style: manni
   - toc:
       permalink: True
