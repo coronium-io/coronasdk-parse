@@ -4,7 +4,7 @@
 
 ## .get
 
-Get a App from Parse.
+Get an App.
 
 *Parameters:*
 
@@ -35,7 +35,7 @@ parse.request( parse.App.create )
 
 ## .update
 
-Update a App.
+Update an App.
 
 *Parameters:*
 
@@ -48,7 +48,7 @@ parse.request( parse.App.update, "applicationId" )
 
 ## .delete
 
-Deletes a App.
+Deletes an App.
 
 *Parameters:*
 

@@ -7,9 +7,9 @@
 Send an "Application Opened" event to Parse.
 
 ```lua
-parse.request( parse.Analytics.AppOpened )
-:data({})
-:response(cb)
+  parse.request( parse.Analytics.AppOpened )
+  :data({})
+  :response(cb)
 ```
 
 ## .event
@@ -17,6 +17,6 @@ parse.request( parse.Analytics.AppOpened )
 Send a custom event to Parse.
 
 ```lua
-parse.request( parse.Analytics.event )
-:response(cb)
+  parse.request( parse.Analytics.event )
+  :response(cb)
 ```
