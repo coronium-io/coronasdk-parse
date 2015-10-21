@@ -7,7 +7,7 @@ markdown_extensions:
   - codehilite:
       guess_lang: False
       noclasses: True
-      pygments_style: friendly
+      pygments_style: bw
   - toc:
       permalink: True
 pages:
