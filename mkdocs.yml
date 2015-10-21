@@ -5,7 +5,6 @@ markdown_extensions:
   - smarty
   - fenced_code
   - codehilite:
-      guess_lang: False
       noclasses: True
       pygments_style: bw
   - toc:
