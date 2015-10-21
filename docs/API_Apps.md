@@ -1,6 +1,6 @@
-## Apps [parse.App]
+# Apps [parse.App]
 
-### .get
+## .get
 
 Get a App from Parse.
 
@@ -13,7 +13,7 @@ parse.request( parse.App.get, "applicationId" )
 :response(cb)
 ```
 
-### .getAll
+## .getAll
 
 Get all Apps.
 
@@ -22,7 +22,7 @@ parse.request( parse.App.getAll )
 :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new App.
 
@@ -31,7 +31,7 @@ parse.request( parse.App.create )
 :response(cb)
 ```
 
-### .update
+## .update
 
 Update a App.
 
@@ -44,7 +44,7 @@ parse.request( parse.App.update, "applicationId" )
 :response(cb)
 ```
 
-### .delete
+## .delete
 
 Deletes a App.
 
