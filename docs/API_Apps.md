@@ -1,5 +1,3 @@
-# Parse.com - Corona SDK Plugin
-
 ## Apps [parse.App]
 
 ### .get

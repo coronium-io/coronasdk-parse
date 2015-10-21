@@ -1,4 +1,4 @@
-## Welcome
+# Welcome
 
 Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to learn how to use the API.
 
@@ -21,17 +21,17 @@ end
 
 ## API
 
-#### [Objects](API_Objects)
-#### [Users](API_Users)
-#### [Sessions](API_Sessions)
-#### [Roles](API_Roles)
-#### [Files](API_Files)
-#### [Analytics](API_Analytics)
-#### [Push](API_Push)
-#### [Installations](API_Installations)
-#### [Config](API_Config)
-#### [Cloud](API_Cloud)
-#### [Schemas](API_Schemas)
-#### [Apps](API_Apps)
-#### [Hooks](API_Hooks)
-#### [Triggers](API_Triggers)
+#### [Objects](API_Objects.md)
+#### [Users](API_Users.md)
+#### [Sessions](API_Sessions.md)
+#### [Roles](API_Roles.md)
+#### [Files](API_Files.md)
+#### [Analytics](API_Analytics.md)
+#### [Push](API_Push.md)
+#### [Installations](API_Installations.md)
+#### [Config](API_Config.md)
+#### [Cloud](API_Cloud.md)
+#### [Schemas](API_Schemas.md)
+#### [Apps](API_Apps.md)
+#### [Hooks](API_Hooks.md)
+#### [Triggers](API_Triggers.md)

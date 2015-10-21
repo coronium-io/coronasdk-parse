@@ -1,5 +1,3 @@
-# Parse.com - Corona SDK Plugin
-
 ## Analytics [parse.Analytics]
 
 ### .AppOpened
