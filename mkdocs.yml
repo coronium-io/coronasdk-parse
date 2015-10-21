@@ -1,5 +1,11 @@
 site_name: Parse Plugin - V2
+site_url: http://parse-corona-sdk-plugin.readthedocs.org
 copyright: C. Byerley | 2015 &copy; develephant | coronium.io
 pages:
-- Start Here...: index.md
-- Development: Overview.md
+  - Start Here...: index.md
+  - Development: Overview.md
+markdown_extensions:
+  - smarty
+  - toc:
+      permalink: True
+      separator: " "
