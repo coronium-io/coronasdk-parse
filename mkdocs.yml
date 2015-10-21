@@ -10,6 +10,6 @@ markdown_extensions:
   - codehilite:
       guess_lang: False
       noclasses: True
-      pygments_style: manni
+      pygments_style: friendly
   - toc:
       permalink: True
