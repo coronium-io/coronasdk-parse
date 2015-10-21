@@ -12,7 +12,6 @@ markdown_extensions:
       permalink: True
 pages:
   - Corona SDK Parse Plugin - V2: index.md
-  - Config: PluginConfig.md
   - Usage:
       - Chapter 1: CH1_Usage.md
       - Chapter 2: CH2_Usage.md
