@@ -13,13 +13,12 @@ markdown_extensions:
       permalink: True
 pages:
   - Corona SDK Parse Plugin - V2: index.md
-  - Usage:
+  - Developer Guide:
       - Chapter 1: CH1_Usage.md
       - Chapter 2: CH2_Usage.md
-  - Development:
-      - Endpoints: Endpoints.md
-      - Using Files: FileTransfer.md
-      - Parse 2 Lua: Parse2Lua.md
+      - Chapter 3: CH3_Usage.md
+      - Chapter 4: CH4_Usage.md
+      - Chapter 5: CH5_Usage.md
   - API:
       - Analytics: API_Analytics.md
       - Apps: API_Apps.md
