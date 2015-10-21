@@ -7,6 +7,8 @@ pages:
 markdown_extensions:
   - smarty
   - fenced_code
-  - codehilite
+  - codehilite:
+      guess_lang: False
+      pygments_style: manni
   - toc:
       permalink: True
