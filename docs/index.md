@@ -1,5 +1,3 @@
-# Corona SDK Parse Plugin - V2
-
 ## Welcome
 
 Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to learn how to use the API.
@@ -17,9 +15,9 @@ end
 
 ## Topics
 
-##### [Parse Plugin - An Overview](Overview)
-##### [Rules for Parse to Lua Conversion](Parse2Lua)
-##### [Parse Plugin - Endpoint Meta](Endpoints)
+##### [Parse Plugin - An Overview](Overview.md)
+##### [Rules for Parse to Lua Conversion](Parse2Lua.md)
+##### [Parse Plugin - Endpoint Meta](Endpoints.md)
 
 ## API
 
