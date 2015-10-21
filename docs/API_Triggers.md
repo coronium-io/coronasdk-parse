@@ -1,8 +1,6 @@
-# Parse.com - Corona SDK Plugin
+# Triggers [parse.Trigger]
 
-## Triggers [parse.Trigger]
-
-### .get
+## .get
 
 Get a Trigger from Parse.
 
@@ -11,29 +9,29 @@ Get a Trigger from Parse.
 * __triggerName__
 
 ```lua
-parse.request( parse.Trigger.get, "triggerName" )
-:response(cb)
+  parse.request( parse.Trigger.get, "triggerName" )
+  :response(cb)
 ```
 
-### .getAll
+## .getAll
 
 Get all Triggers.
 
 ```lua
-parse.request( parse.Trigger.getAll )
-:response(cb)
+  parse.request( parse.Trigger.getAll )
+  :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new Trigger.
 
 ```lua
-parse.request( parse.Trigger.create )
-:response(cb)
+  parse.request( parse.Trigger.create )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update a Trigger.
 
@@ -42,11 +40,11 @@ Update a Trigger.
 * __triggerName__
 
 ```lua
-parse.request( parse.Trigger.update, "triggerName" )
-:response(cb)
+  parse.request( parse.Trigger.update, "triggerName" )
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Deletes a Trigger.
 
@@ -55,6 +53,6 @@ Deletes a Trigger.
 * __triggerName__
 
 ```lua
-parse.request( parse.Trigger.delete, "triggerName" )
-:response(cb)
+  parse.request( parse.Trigger.delete, "triggerName" )
+  :response(cb)
 ```

@@ -1,10 +1,8 @@
-# Parse.com - Corona SDK Plugin
+# Files [parse.File]
 
-## Files [parse.File]
+See [Working with Files](CH5_Usage.md) for __upload__ and __download__ methods.
 
-See [Working with Files](Files) for __upload__ and __download__ methods.
-
-### .link
+## .link
 
 Link a file.
 
@@ -13,17 +11,17 @@ Link a file.
 * __class__
 
 ```lua
-parse.request( parse.File.link, "Pets" )
-:response(cb)
+  parse.request( parse.File.link, "Pets" )
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Delete a File.
 
 * Parse provided file uri.
 
 ```lua
-parse.request( parse.File.delete, "http://path-to-file" )
-:response(cb)
+  parse.request( parse.File.delete, "http://path-to-file" )
+  :response(cb)
 ```

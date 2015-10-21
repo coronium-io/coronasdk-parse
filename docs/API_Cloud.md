@@ -1,29 +1,27 @@
-# Parse.com - Corona SDK Plugin
+# Cloud [parse.Cloud]
 
-## Cloud [parse.Cloud]
-
-### .call
+## .call
 
 Call a Cloud function.
 
 *parameters:*
 
-* functionName
+* __functionName__
 
 ```lua
-parse.request( parse.Cloud.call, "functionName" )
-:response(cb)
+  parse.request( parse.Cloud.call, "functionName" )
+  :response(cb)
 ```
 
-### .job
+## .job
 
 Start up a Cloud Job.
 
 *parameters:*
 
-* jobName
+* __jobName__
 
 ```lua
-parse.request( parse.Cloud.job, "jobName" )
-:response(cb)
+  parse.request( parse.Cloud.job, "jobName" )
+  :response(cb)
 ```

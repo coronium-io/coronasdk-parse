@@ -1,8 +1,6 @@
-# Parse.com - Corona SDK Plugin
+# Installations [parse.Installation]
 
-## Installations [parse.Installation]
-
-### .get
+## .get
 
 Get an Installation from Parse.
 
@@ -11,31 +9,31 @@ Get an Installation from Parse.
 * __objectId__
 
 ```lua
-parse.request( parse.Installation.get, "1234abcd" )
-:response(cb)
+  parse.request( parse.Installation.get, "1234abcd" )
+  :response(cb)
 ```
 
-### .query
+## .query
 
 Perform an Installation Query.
 
 ```lua
-parse.request( parse.Installation.query )
-:where( { color = "Brown" } )
-:response(cb)
+  parse.request( parse.Installation.query )
+  :where( { color = "Brown" } )
+  :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new Installation.
 
 ```lua
-parse.request( parse.Installation.create )
-:data( { color = "Red", name = "Jingles" } )
-:response(cb)
+  parse.request( parse.Installation.create )
+  :data( { color = "Red", name = "Jingles" } )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update an Installation by `objectId`.
 
@@ -44,12 +42,12 @@ Update an Installation by `objectId`.
 * __objectId__
 
 ```lua
-parse.request( parse.Installation.update, "Ex4UOSca" )
-:set("color", "Blue")
-:response(cb)
+  parse.request( parse.Installation.update, "Ex4UOSca" )
+  :set("color", "Blue")
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Deletes an Installation by `objectId`.
 
@@ -58,6 +56,6 @@ Deletes an Installation by `objectId`.
 * __objectId__
 
 ```lua
-parse.request( parse.Installation.delete, "Ex4UOSca" )
-:response(cb)
+  parse.request( parse.Installation.delete, "Ex4UOSca" )
+  :response(cb)
 ```

@@ -1,19 +1,17 @@
-# Parse.com - Corona SDK Plugin
+# Sessions [parse.Session]
 
-## Sessions [parse.Session]
-
-### .me
+## .me
 
 Get the logged in Session.
 
 > The User must be logged in.
 
 ```lua
-parse.request( parse.Session.me )
-:response(cb)
+  parse.request( parse.Session.me )
+  :response(cb)
 ```
 
-### .get
+## .get
 
 Get an Session by `objectId`.
 
@@ -22,44 +20,44 @@ Get an Session by `objectId`.
 * __objectId__
 
 ```lua
-parse.request( parse.Session.get, "1234abcd" )
-:response(cb)
+  parse.request( parse.Session.get, "1234abcd" )
+  :response(cb)
 ```
 
-### .query
+## .query
 
 Get Session(s) by Query. To fetch all, pass empty table to the `:where` method.
 
 ```lua
-parse.request( parse.Session.query )
-:where( { color = "Red" } )
-:response(cb)
+  parse.request( parse.Session.query )
+  :where( { color = "Red" } )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update a Session by `objectId`.
 
 ```lua
-parse.request( parse.Session.update, "1234abcd" )
-:data( { color = "Yellow" } )
-:response(cb)
+  parse.request( parse.Session.update, "1234abcd" )
+  :data( { color = "Yellow" } )
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Delete a Session by `objectId`.
 
 ```lua
-parse.request( parse.Session.delete, "1234abcd" )
-:response(cb)
+  parse.request( parse.Session.delete, "1234abcd" )
+  :response(cb)
 ```
 
-### .logout
+## .logout
 
 Alias to `User` logout.
 
 ```lua
-parse.request( parse.Session.logout )
-:response(cb)
+  parse.request( parse.Session.logout )
+  :response(cb)
 ```

@@ -1,8 +1,6 @@
-# Parse.com - Corona SDK Plugin
+# Hooks [parse.Hook]
 
-## Hooks [parse.Hook]
-
-### .get
+## .get
 
 Get a Hook from Parse.
 
@@ -11,29 +9,29 @@ Get a Hook from Parse.
 * __functionName__
 
 ```lua
-parse.request( parse.Hook.get, "functionName" )
-:response(cb)
+  parse.request( parse.Hook.get, "functionName" )
+  :response(cb)
 ```
 
-### .getAll
+## .getAll
 
 Get all Hooks.
 
 ```lua
-parse.request( parse.Hook.getAll )
-:response(cb)
+  parse.request( parse.Hook.getAll )
+  :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new Hook.
 
 ```lua
-parse.request( parse.Hook.create )
-:response(cb)
+  parse.request( parse.Hook.create )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update a Hook.
 
@@ -42,11 +40,11 @@ Update a Hook.
 * __functionName__
 
 ```lua
-parse.request( parse.Hook.update, "functionName" )
-:response(cb)
+  parse.request( parse.Hook.update, "functionName" )
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Deletes a Hook.
 
@@ -55,6 +53,6 @@ Deletes a Hook.
 * __functionName__
 
 ```lua
-parse.request( parse.Hook.delete, "functionName" )
-:response(cb)
+  parse.request( parse.Hook.delete, "functionName" )
+  :response(cb)
 ```

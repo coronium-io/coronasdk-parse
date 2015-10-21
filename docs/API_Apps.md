@@ -11,8 +11,8 @@ Get an App.
 * __applicationId__
 
 ```lua
-parse.request( parse.App.get, "applicationId" )
-:response(cb)
+  parse.request( parse.App.get, "applicationId" )
+  :response(cb)
 ```
 
 ## .getAll
@@ -20,8 +20,8 @@ parse.request( parse.App.get, "applicationId" )
 Get all Apps.
 
 ```lua
-parse.request( parse.App.getAll )
-:response(cb)
+  parse.request( parse.App.getAll )
+  :response(cb)
 ```
 
 ## .create
@@ -29,8 +29,8 @@ parse.request( parse.App.getAll )
 Create a new App.
 
 ```lua
-parse.request( parse.App.create )
-:response(cb)
+  parse.request( parse.App.create )
+  :response(cb)
 ```
 
 ## .update
@@ -42,8 +42,8 @@ Update an App.
 * __applicationId__
 
 ```lua
-parse.request( parse.App.update, "applicationId" )
-:response(cb)
+  parse.request( parse.App.update, "applicationId" )
+  :response(cb)
 ```
 
 ## .delete
@@ -55,6 +55,6 @@ Deletes an App.
 * __applicationId__
 
 ```lua
-parse.request( parse.App.delete, "applicationId" )
-:response(cb)
+  parse.request( parse.App.delete, "applicationId" )
+  :response(cb)
 ```

@@ -1,8 +1,6 @@
-# Parse.com - Corona SDK Plugin
+# Roles [parse.Role]
 
-## Roles [parse.Role]
-
-### .get
+## .get
 
 Get a Role.
 
@@ -11,21 +9,21 @@ Get a Role.
 * __objectId__
 
 ```lua
-parse.request( parse.Role.get, "1234abcd" )
-:response(cb)
+  parse.request( parse.Role.get, "1234abcd" )
+  :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new Role.
 
 ```lua
-parse.request( parse.Role.create )
-:data( { color = "Red", name = "Jingles" } )
-:response(cb)
+  parse.request( parse.Role.create )
+  :data( { color = "Red", name = "Jingles" } )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update a Role.
 
@@ -34,11 +32,11 @@ Update a Role.
 * __objectId__
 
 ```lua
-parse.request( parse.Role.update, "Ex4UOSca" )
-:response(cb)
+  parse.request( parse.Role.update, "Ex4UOSca" )
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Deletes an Object.
 
@@ -47,6 +45,6 @@ Deletes an Object.
 * __objectId__
 
 ```lua
-parse.request( parse.Role.delete, "Ex4UOSca" )
-:response(cb)
+  parse.request( parse.Role.delete, "Ex4UOSca" )
+  :response(cb)
 ```

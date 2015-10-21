@@ -1,8 +1,6 @@
-# Parse.com - Corona SDK Plugin
+# Schemas [parse.Schema]
 
-## Schemas [parse.Schema]
-
-### .get
+## .get
 
 Get a Schema from Parse.
 
@@ -11,20 +9,20 @@ Get a Schema from Parse.
 * __schemaName__
 
 ```lua
-parse.request( parse.Schema.get, "schemaName" )
-:response(cb)
+  parse.request( parse.Schema.get, "schemaName" )
+  :response(cb)
 ```
 
-### .getAll
+## .getAll
 
 Get all Schemas.
 
 ```lua
-parse.request( parse.Schema.getAll )
-:response(cb)
+  parse.request( parse.Schema.getAll )
+  :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new Schema.
 
@@ -33,11 +31,11 @@ Create a new Schema.
 * __schemaName__
 
 ```lua
-parse.request( parse.Schema.create, "schemaName" )
-:response(cb)
+  parse.request( parse.Schema.create, "schemaName" )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update a Schema.
 
@@ -46,11 +44,11 @@ Update a Schema.
 * __schemaName__
 
 ```lua
-parse.request( parse.Schema.update, "schemaName" )
-:response(cb)
+  parse.request( parse.Schema.update, "schemaName" )
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Deletes a Schema.
 
@@ -59,6 +57,6 @@ Deletes a Schema.
 * __schemaName__
 
 ```lua
-parse.request( parse.Object.delete, "schemaName" )
-:response(cb)
+  parse.request( parse.Object.delete, "schemaName" )
+  :response(cb)
 ```

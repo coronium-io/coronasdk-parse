@@ -1,8 +1,6 @@
-# Parse.com - Corona SDK Plugin
+# Objects [parse.Object]
 
-## Objects [parse.Object]
-
-### .get
+## .get
 
 Get an Object from Parse.
 
@@ -12,11 +10,11 @@ Get an Object from Parse.
 * __objectId__
 
 ```lua
-parse.request( parse.Object.get, "Pets", "1234abcd" )
-:response(cb)
+  parse.request( parse.Object.get, "Pets", "1234abcd" )
+  :response(cb)
 ```
 
-### .query
+## .query
 
 Perform an Object Query.
 
@@ -25,12 +23,12 @@ Perform an Object Query.
 * __class__
 
 ```lua
-parse.request( parse.Object.query, "Pets" )
-:where( { color = "Brown" } )
-:response(cb)
+  parse.request( parse.Object.query, "Pets" )
+  :where( { color = "Brown" } )
+  :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new Object.
 
@@ -39,27 +37,27 @@ Create a new Object.
 * __class__
 
 ```lua
---== Creating an Object
---== Using `:set`
-parse.request( parse.Object.create, "Pets" )
-:set("color", "Red")
-:set("name", "Jingles")
-:response(cb)
+  --== Creating an Object
+  --== Using `:set`
+  parse.request( parse.Object.create, "Pets" )
+  :set("color", "Red")
+  :set("name", "Jingles")
+  :response(cb)
 
---== OR
---== Using `:data`
-parse.request( parse.Object.create, "Pets" )
-:data( { color = "Red", name = "Jingles" } )
-:response(cb)
+  --== OR
+  --== Using `:data`
+  parse.request( parse.Object.create, "Pets" )
+  :data( { color = "Red", name = "Jingles" } )
+  :response(cb)
 
---== OR
---== Using `:data` with JSON string
-parse.request( parse.Object.create, "Pets" )
-:data( [[{"color":"Red","name":"Jingles"}]] )
-:response(cb)
+  --== OR
+  --== Using `:data` with JSON string
+  parse.request( parse.Object.create, "Pets" )
+  :data( [[{"color":"Red","name":"Jingles"}]] )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update an Object.
 
@@ -69,13 +67,13 @@ Update an Object.
 * __objectId__
 
 ```lua
-parse.request( parse.Object.update, "Pets", "Ex4UOSca" )
-:set("color", "Blue")
-:response(cb)
+  parse.request( parse.Object.update, "Pets", "Ex4UOSca" )
+  :set("color", "Blue")
+  :response(cb)
 ```
 See `.create` above for other usages with Lua tables, and JSON strings.
 
-### .delete
+## .delete
 
 Deletes an Object.
 
@@ -85,6 +83,6 @@ Deletes an Object.
 * __objectId__
 
 ```lua
-parse.request( parse.Object.delete, "Pets", "Ex4UOSca" )
-:response(cb)
+  parse.request( parse.Object.delete, "Pets", "Ex4UOSca" )
+  :response(cb)
 ```

@@ -1,12 +1,10 @@
-# Parse.com - Corona SDK Plugin
+# Config [parse.Config]
 
-## Config [parse.Config]
-
-### .get
+## .get
 
 Get the Parse application Config.
 
 ```lua
-parse.request( parse.Config.get )
-:response(cb)
+  parse.request( parse.Config.get )
+  :response(cb)
 ```

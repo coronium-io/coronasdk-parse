@@ -1,41 +1,39 @@
-# Parse.com - Corona SDK Plugin
+# Users [parse.User]
 
-## Users [parse.User]
-
-### .login
+## .login
 
 Log in a User.
 
 ```lua
-parse.request( parse.User.login )
-:set("username", "Chris")
-:set("password", "1234abcd")
-:response(cb)
+  parse.request( parse.User.login )
+  :set("username", "Chris")
+  :set("password", "1234abcd")
+  :response(cb)
 ```
 
-### .logout
+## .logout
 
 Log out a User.
 
 > If the User is not logged in, this action does nothing.
 
 ```lua
-parse.request( parse.User.logout )
-:response(cb)
+  parse.request( parse.User.logout )
+  :response(cb)
 ```
 
-### .me
+## .me
 
 Get the logged in User.
 
 > The user must be logged in.
 
 ```lua
-parse.request( parse.User.me )
-:response(cb)
+  parse.request( parse.User.me )
+  :response(cb)
 ```
 
-### .get
+## .get
 
 Get an User by `objectId`.
 
@@ -44,74 +42,74 @@ Get an User by `objectId`.
 * __objectId__
 
 ```lua
-parse.request( parse.User.get, "1234abcd" )
-:response(cb)
+  parse.request( parse.User.get, "1234abcd" )
+  :response(cb)
 ```
 
-### .query
+## .query
 
 Get User(s) by Query. To fetch all, pass empty table to the `:where` method.
 
 ```lua
-parse.request( parse.User.query )
-:where( { color = "Red" } )
-:options( { limit = 1, order = "color" } )
-:response(cb)
+  parse.request( parse.User.query )
+  :where( { color = "Red" } )
+  :options( { limit = 1, order = "color" } )
+  :response(cb)
 ```
 
-### .create
+## .create
 
 Create a new User.
 
 ```lua
-parse.request( parse.User.create )
-:data( { username = "Spock", password = "1234", email = "spock@enterprise.net" } )
-:response(cb)
+  parse.request( parse.User.create )
+  :data( { username = "Spock", password = "1234", email = "spock@enterprise.net" } )
+  :response(cb)
 ```
 
-### .update
+## .update
 
 Update a User by `objectId`.
 
 ```lua
-parse.request( parse.User.update, "1234abcd" )
-:data( { phone = "233-230-2333", address = "Space" } )
-:response(cb)
+  parse.request( parse.User.update, "1234abcd" )
+  :data( { phone = "233-230-2333", address = "Space" } )
+  :response(cb)
 ```
 
-### .delete
+## .delete
 
 Delete a User by `objectId`.
 
 ```lua
-parse.request( parse.User.delete, "1234abcd" )
-:response(cb)
+  parse.request( parse.User.delete, "1234abcd" )
+  :response(cb)
 ```
 
-### .requestPasswordReset
+## .requestPasswordReset
 
 Queues up a password reset request based on `email`.
 
 ```lua
-parse.request( parse.User.requestPasswordReset )
-:options( { email = "spock@enterprise.net" } )
-:response(cb)
+  parse.request( parse.User.requestPasswordReset )
+  :options( { email = "spock@enterprise.net" } )
+  :response(cb)
 ```
 
-### .link
+## .link
 
 Link a User by `objectId`.
 
 ```lua
-parse.request( parse.User.link, "1234abcd" )
-:response(cb)
+  parse.request( parse.User.link, "1234abcd" )
+  :response(cb)
 ```
 
-### .unlink
+## .unlink
 
 Unlink a User by `objectId`.
 
 ```lua
-parse.request( parse.User.unlink, "1234abcd" )
-:response(cb)
+  parse.request( parse.User.unlink, "1234abcd" )
+  :response(cb)
 ```

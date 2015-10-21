@@ -1,12 +1,10 @@
-# Parse.com - Corona SDK Plugin
+# Push [parse.Push]
 
-## Push [parse.Push]
-
-### .send
+## .send
 
 Send a Push request.
 
 ```lua
-parse.request( parse.Push.send )
-:response(cb)
+  parse.request( parse.Push.send )
+  :response(cb)
 ```
