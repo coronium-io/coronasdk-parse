@@ -1,3 +1,5 @@
+<style>.codehilite{padding-top:2px;padding-bottom:6px;}</style>
+
 # Analytics [parse.Analytics]
 
 ## .AppOpened

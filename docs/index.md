@@ -1,4 +1,4 @@
-<style>.codehilite{padding-top:4px;padding-bottom:4px;}</style>
+<style>.codehilite{padding-top:2px;padding-bottom:6px;}</style>
 
 # Welcome
 
