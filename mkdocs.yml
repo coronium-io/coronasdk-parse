@@ -8,7 +8,7 @@ markdown_extensions:
   - codehilite:
       noclasses: True
       guess_lang: True
-      pygments_style: default
+      pygments_style: borland
   - toc:
       permalink: True
 pages:

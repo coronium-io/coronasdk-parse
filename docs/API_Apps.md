@@ -10,7 +10,7 @@ Get a App from Parse.
 
 * __applicationId__
 
-```
+```lua
 parse.request( parse.App.get, "applicationId" )
 :response(cb)
 ```
@@ -19,7 +19,7 @@ parse.request( parse.App.get, "applicationId" )
 
 Get all Apps.
 
-```
+```lua
 parse.request( parse.App.getAll )
 :response(cb)
 ```
