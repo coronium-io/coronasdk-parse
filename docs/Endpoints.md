@@ -10,15 +10,15 @@ local req = parse.request( parse.User.login )
 
 ### Objects [parse.Object]
 
-`.get`
+```.get```
 
-`.query`
+```.query```
 
-`.create`
+```.create```
 
-`.update`
+```.update```
 
-`.delete`
+```.delete```
 
 ### Users [parse.User]
 
@@ -74,7 +74,7 @@ local req = parse.request( parse.User.login )
 
 `.delete`
 
-See also [Working with Files](Files)
+See also [Working with Files](FileTransfer.md)
 
 ### Analytics [parse.Analytics]
 
