@@ -6,5 +6,7 @@ pages:
   - Development: Overview.md
 markdown_extensions:
   - smarty
+  - fenced_code
+  - codehilite
   - toc:
       permalink: True

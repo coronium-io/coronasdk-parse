@@ -1,12 +1,17 @@
 # Corona SDK Parse Plugin - V2
 
-[TOC]
-
 ## Welcome
 
 Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to learn how to use the API.
 
 Following a few rules, all JSON example data can be converted into a Lua table structure.
+
+```lua
+local code = "This is some code"
+function main()
+  return false
+end
+```
 
 *You can also use raw JSON strings in certain methods, if preferable.*
 
