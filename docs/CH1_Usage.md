@@ -1,14 +1,14 @@
 The Parse plugin follows a simple pattern for making requests to the Parse REST API. The plugin facilitates the entire REST API. By reading through the [__Parse REST API Guide__](https://www.parse.com/docs/rest/guide) you will have a much easier time working with this plugin.
 
-## Request
+# Request
 
 It all starts with a __request__ *to* Parse, and completes with a __response__ *from* Parse. What happens in-between that depends on the API call being used.  __All responses are returned in a Lua table.__
 
-For exact details about each response, please see the Parse REST Guide mentioned earlier, or follow the direct Parse links off the [API pages](Home).
+For exact details about each response, please see the Parse REST Guide mentioned earlier, or follow the direct Parse links off the [API pages](index.md).
 
-### parse.request
+## parse.request
 
-A `parse.request` requires one of the Parse REST API [endpoint objects](Endpoints) as the first parameter.
+A `parse.request` requires one of the Parse REST API [endpoint objects](Endpoints.md) as the first parameter.
 
 Example:
 
@@ -30,7 +30,7 @@ local req = parse.request( parse.Object.update, "Pets", "1234abcd" )
 
 > A `parse.Object.update` request requires a __class__ and __objectId__ parameter.
 
-## Response
+# Response
 
 Every `parse.request` must have a `response` *listener* attached to it before it will fire. For example, in the previous example, the `request` is set up, but won't do anything until it has a `response` listener.
 
@@ -103,9 +103,9 @@ In most cases you won't need to use this method, as the standard headers are alr
 
 __:progress( ok, bytesTrans, bytesEst )__
 
-Used as a progress status *listener* for __upload__ and __download__ file events. See [Using Files](UsingFiles). The listener receives a status (`ok`), the bytes transferred (`bytesTrans`), and the estimated bytes to go (`bytesEst`). Use to follow file transfer progress.
+Used as a progress status *listener* for __upload__ and __download__ file events. See [Using Files](FileTransfer.md). The listener receives a status (`ok`), the bytes transferred (`bytesTrans`), and the estimated bytes to go (`bytesEst`). Use to follow file transfer progress.
 
-### Coding Styles
+## Coding Styles
 
 You can use a variable, chain, or stack the various request methods, whatever fits your coding style best:
 
