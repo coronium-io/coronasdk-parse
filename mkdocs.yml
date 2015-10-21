@@ -2,3 +2,5 @@ site_name: Parse Plugin - V2
 copyright: C. Byerley | 2015 &copy; develephant | coronium.io
 pages:
 - Start Here...: index.md
+- Development: Overview.md
+  - Plugin_Config: PluginConfig.md
