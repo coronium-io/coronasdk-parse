@@ -24,5 +24,3 @@ Following a few rules, all JSON example data can be converted into a Lua table s
 #### [Apps](API_Apps.md)
 #### [Hooks](API_Hooks.md)
 #### [Triggers](API_Triggers.md)
-
-:elephant:

@@ -10,15 +10,15 @@ local req = parse.request( parse.User.login )
 
 ### Objects [parse.Object]
 
-```.get```
+__.get__
 
-```.query```
+__.query__
 
-```.create```
+__.create__
 
-```.update```
+__.update__
 
-```.delete```
+__.delete__
 
 ### Users [parse.User]
 
