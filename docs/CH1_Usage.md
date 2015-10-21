@@ -1,7 +1,3 @@
-# Corona SDK Parse Plugin
-
-## Usage - Chapter 1
-
 The Parse plugin follows a simple pattern for making requests to the Parse REST API. The plugin facilitates the entire REST API. By reading through the [__Parse REST API Guide__](https://www.parse.com/docs/rest/guide) you will have a much easier time working with this plugin.
 
 ## Request
@@ -34,7 +30,7 @@ local req = parse.request( parse.Object.update, "Pets", "1234abcd" )
 
 > A `parse.Object.update` request requires a __class__ and __objectId__ parameter.
 
-### Response
+## Response
 
 Every `parse.request` must have a `response` *listener* attached to it before it will fire. For example, in the previous example, the `request` is set up, but won't do anything until it has a `response` listener.
 

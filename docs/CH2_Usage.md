@@ -1,7 +1,3 @@
-# Corona SDK Parse Plugin
-
-## Usage - Chapter 2
-
 To get started with a new app, you'll need to gather both your __Application ID__ and your __REST API Key__ from your Parse.com dashboard settings area.
 
 ## Setting the Config
@@ -20,7 +16,7 @@ parse.config:restApiKey("your-rest-api-key")
 
 > Now the auth data is stored and can be used for requests.
 
-### Debug Mode
+## Debug Mode
 
 When you're developing, it's nice to see the data that is flowing through the app. You can turn on the debug flag to get a print out of data in your terminal. This can be set in your Config:
 
@@ -51,9 +47,9 @@ Here are some things to look out for in the Parse.com curl examples:
 * Ignore any __-H__ flags (header). These are handled by the plugin.
 * Ignore the url path, you'll use the request object constants.
 
-Be sure to read the [Parse to Lua](Parse2Lua) entry.
+Be sure to read the [Parse to Lua](Parse2Lua.md) entry.
 
-### Examples
+## Examples
 
 __Logging in a User__
 
@@ -68,7 +64,7 @@ curl -X GET \
   https://api.parse.com/1/login
 ```
 
-In this login example from Parse.com, we can see the structure of a "GET" method. You should notice the two __--data--urlencode__ values. This gives us a clue that we should us the `:options()` method. Since this is the login method, we need to use the correct endpoint object (See [Endpoints](Endpoints)). In this case that would be `parse.User.login`. Let's see what it would look like in the client code:
+In this login example from Parse.com, we can see the structure of a "GET" method. You should notice the two __--data--urlencode__ values. This gives us a clue that we should us the `:options()` method. Since this is the login method, we need to use the correct endpoint object (See [Endpoints](Endpoints.md)). In this case that would be `parse.User.login`. Let's see what it would look like in the client code:
 
 ```lua
 --Lua

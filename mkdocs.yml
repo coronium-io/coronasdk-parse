@@ -11,7 +11,7 @@ markdown_extensions:
   - toc:
       permalink: True
 pages:
-  - Start Here...': index.md
+  - Start Here...: index.md
   - Config: PluginConfig.md
   - Usage:
       - Chapter 1: CH1_Usage.md
