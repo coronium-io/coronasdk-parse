@@ -23,3 +23,15 @@ pages:
   - API:
       - Analytics: API_Analytics.md
       - Apps: API_Apps.md
+      - Cloud: API_Cloud.md
+      - Config: API_Config.md
+      - Files: API_Files.md
+      - Hooks: API_Hooks.md
+      - Installations: API_Installations.md
+      - Objects: API_Objects.md
+      - Push: API_Push.md
+      - Roles: API_Roles.md
+      - Schemas: API_Schemas.md
+      - Sessions: API_Sessions.md
+      - Triggers: API_Triggers.md
+      - Users: API_Users.md
