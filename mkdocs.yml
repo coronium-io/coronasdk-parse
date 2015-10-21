@@ -1,9 +1,6 @@
 site_name: Parse Plugin - V2
 site_url: http://parse-corona-sdk-plugin.readthedocs.org
 copyright: C. Byerley | 2015 &copy; develephant | coronium.io
-pages:
-  - Start Here...: index.md
-  - Development: Overview.md
 markdown_extensions:
   - smarty
   - fenced_code
@@ -13,3 +10,17 @@ markdown_extensions:
       pygments_style: friendly
   - toc:
       permalink: True
+pages:
+  - Start Here...': index.md
+  - Config: PluginConfig.md
+  - Usage:
+      - Chapter 1: CH1_Usage.md
+      - Chapter 2: CH2_Usage.md
+  - Development:
+      - Overview': Overview.md
+      - Endpoints: Endpoints.md
+      - File Transfer: FileTransfer.md
+      - Parse 2 Lua: Parse2Lua.md
+  - API:
+      - Analytics: API_Analytics.md
+      - Apps: API_Apps.md
