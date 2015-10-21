@@ -1,6 +1,6 @@
-## Analytics [parse.Analytics]
+# Analytics [parse.Analytics]
 
-### .AppOpened
+## .AppOpened
 
 Send an "Application Opened" event to Parse.
 
@@ -10,7 +10,7 @@ parse.request( parse.Analytics.AppOpened )
 :response(cb)
 ```
 
-### .event
+## .event
 
 Send a custom event to Parse.
 
