@@ -4,16 +4,16 @@ The Parse plugin follows a simple pattern for making requests to the Parse REST 
 
 It all starts with a __request__ *to* Parse, and completes with a __response__ *from* Parse. What happens in-between that depends on the API call being used.  __All responses are returned in a Lua table.__
 
-For exact details about each response, please see the Parse REST Guide mentioned earlier, or follow the direct Parse links off the [API pages](index.md).
+For exact details about each response, please see the Parse REST Guide mentioned earlier, or follow the direct Parse links off the API pages.
 
 ## parse.request
 
-A `parse.request` requires one of the Parse REST API [endpoint objects](Endpoints.md) as the first parameter.
+A `parse.request` requires one of the Parse REST API [endpoint objects](CH4_Usage.md) as the first parameter.
 
 Example:
 
 ```lua
-local req = parse.request( parse.User.me )
+  local req = parse.request( parse.User.me )
 ```
 
 This will make a request to the Parse.com User endpoint, asking for the `me` resource.
@@ -25,7 +25,7 @@ __Additional parameters may be required depending on the endpoint.__
 Example:
 
 ```lua
-local req = parse.request( parse.Object.update, "Pets", "1234abcd" )
+  local req = parse.request( parse.Object.update, "Pets", "1234abcd" )
 ```
 
 *A `parse.Object.update` request requires a __class__ and __objectId__ parameter.*
@@ -37,8 +37,8 @@ Every `parse.request` must have a `response` *listener* attached to it before it
 What follows is the bare minimum needed for a working `request`:
 
 ```lua
-local req = parse.request( parse.User.me )
-req:response()
+  local req = parse.request( parse.User.me )
+  req:response()
 ```
 
 To capture any incoming data, we need to provide a callback function to the `response` listener. The callback function receives three parameters; the success state (`ok`), the data, if any, as a table (`res`), and an (`info`) table that contains various information about the request and response that took place.
@@ -46,15 +46,15 @@ To capture any incoming data, we need to provide a callback function to the `res
 Example:
 
 ```lua
-local req = parse.request( parse.User.me )
-req:response(function( ok, res, info )
-  if not ok then
-    print( 'err', res )
-  else
-    print( res.username )
-    print( info.status )
-  end
-end)
+  local req = parse.request( parse.User.me )
+  req:response(function( ok, res, info )
+    if not ok then
+      print( 'err', res )
+    else
+      print( res.username )
+      print( info.status )
+    end
+  end)
 ```
 
 ## Request Methods
@@ -101,7 +101,7 @@ In most cases you won't need to use this method, as the standard headers are alr
 
 __:progress( ok, bytesTrans, bytesEst )__
 
-Used as a progress status *listener* for __upload__ and __download__ file events. See [Using Files](FileTransfer.md). The listener receives a status (`ok`), the bytes transferred (`bytesTrans`), and the estimated bytes to go (`bytesEst`). Use to follow file transfer progress.
+Used as a progress status *listener* for __upload__ and __download__ file events. See [Using Files](CH5_Usage.md). The listener receives a status (`ok`), the bytes transferred (`bytesTrans`), and the estimated bytes to go (`bytesEst`). Use to follow file transfer progress.
 
 ## Coding Styles
 
@@ -110,45 +110,45 @@ You can use a variable, chain, or stack the various request methods, whatever fi
 *Variable*
 
 ```lua
-local req = parse.request( parse.Config.get )
-req:response(function( ok, res )
-  if not ok then
-    print('err', res)
-  else
-    print(res.color, res.age)
-  end
-end)
+  local req = parse.request( parse.Config.get )
+  req:response(function( ok, res )
+    if not ok then
+      print('err', res)
+    else
+      print(res.color, res.age)
+    end
+  end)
 ```
 
 *Chaining*
 
 ```lua
---Setup callback
-local function cb( ok, res, info )
-  print( ok, res, info )
-end
+  --Setup callback
+  local function cb( ok, res, info )
+    print( ok, res, info )
+  end
 
-parse.request( parse.User.me ):response(cb)
+  parse.request( parse.User.me ):response(cb)
 
---OR
+  --OR
 
-parse.request( parse.User.get, "1234abcd" ):options({keys='username'}):response(cb)
+  parse.request( parse.User.get, "1234abcd" ):options({keys='username'}):response(cb)
 ```
 
 *Stacking*
 
 ```lua
-parse.request( parse.Objects.query, "Pets" )
-:where( { color = "Green", age = { ["$gt"] = 20 } )
-:options( { limit = 20, order = "age" } )
-:header("X-Secret-Msg", "some-value")
-:response(function( ok, res, info )
-  if not ok then
-    print('err', res)
-  else
-    if info.status == 200 then
-      print( res.color, res.age )
+  parse.request( parse.Objects.query, "Pets" )
+  :where( { color = "Green", age = { ["$gt"] = 20 } )
+  :options( { limit = 20, order = "age" } )
+  :header("X-Secret-Msg", "some-value")
+  :response(function( ok, res, info )
+    if not ok then
+      print('err', res)
+    else
+      if info.status == 200 then
+        print( res.color, res.age )
+      end
     end
-  end
-end)
+  end)
 ```
