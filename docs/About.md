@@ -1,4 +1,4 @@
-# ~ About Plugin ~
+# About Plugin
 
 __Parse plugin for Corona SDK__ is programmed, documented, and maintained by Chris Byerley.
 
