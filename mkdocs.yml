@@ -4,7 +4,6 @@ site_author: Chris Byerley
 copyright: Parse plugin for Corona SDK - &copy;2015 Chris Byerley - @develephant
 markdown_extensions:
   - admonition
-  - smarty
   - fenced_code
   - codehilite:
       noclasses: True
