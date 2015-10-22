@@ -35,3 +35,4 @@ pages:
       - Sessions: API_Sessions.md
       - Triggers: API_Triggers.md
       - Users: API_Users.md
+  - About Plugin: About.md
