@@ -5,7 +5,7 @@
 !!! important
     Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to understand how the Parse REST API works.
 
-__[Getting Started](CH1_Usage.md)__
+__[Click Here to Read the Developer Guide to get Started](CH1_Usage.md)__
 
 ---
 
