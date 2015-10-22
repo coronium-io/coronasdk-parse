@@ -47,7 +47,7 @@ Here are some things to look out for in the Parse.com curl examples:
 * Ignore any __-H__ flags (header). These are handled by the plugin.
 * Ignore the url path, you'll use the request object constants.
 
-!!! info "Be sure to read the [Parse to Lua](CH3_Usage.md) entry."
+!!! tip "Be sure to read the [Parse to Lua](CH3_Usage.md) chapter."
 
 ## Examples
 

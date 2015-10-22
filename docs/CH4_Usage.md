@@ -1,12 +1,12 @@
 # Parse API Endpoints
 
-!!! info "You can browse detailed information in the API section."
-
 The endpoint meta objects are used to provide the url, parameters, etc. for a specific request. It is always the first argument in a `parse.request` call, for example:
 
 ```lua
   local req = parse.request( parse.User.login )
 ```
+
+!!! note "You can browse detailed information in the API section."
 
 ## Objects [parse.Object]
 

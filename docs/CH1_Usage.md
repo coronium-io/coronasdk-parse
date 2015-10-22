@@ -8,7 +8,7 @@ For exact details about each response, please see the Parse REST Guide mentioned
 
 ## parse.request
 
-A `parse.request` requires one of the Parse REST API [endpoint objects](CH4_Usage.md) as the first parameter.
+A `parse.request` requires one of the Parse REST API "endpoint objects" as the first parameter.
 
 Example:
 
