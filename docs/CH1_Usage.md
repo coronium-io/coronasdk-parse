@@ -33,14 +33,14 @@ Example:
 !!! important
     Every `parse.request()` must have a response *listener* attached to it before it will fire. For example, in the previous code, the request is set up, ___but won't do anything until it has a `:response()` method added.___
 
-What follows is the bare minimum needed for a working `request`:
+What follows is the bare minimum needed for a working request:
 
 ```lua
   local req = parse.request( parse.User.me )
   req:response()
 ```
 
-To capture any incoming data, we need to provide a callback function to the `response` listener. The callback function receives three parameters; the success state (`ok`), the data, if any, as a table (`res`), and an (`info`) table that contains various information about the request and response that took place.
+To capture any incoming data, we need to provide a callback function to the response listener. The callback function receives three parameters; the success state (`ok`), the data, if any, as a table (`res`), and an (`info`) table that contains various information about the request and response that took place.
 
 Example:
 

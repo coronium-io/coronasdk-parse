@@ -11,7 +11,6 @@ local parse = require 'plugin.parse'
 
 parse.config:applicationId("your-application-id")
 parse.config:restApiKey("your-rest-api-key")
-
 ```
 
 *Now the auth data is stored and can be used for requests.*
@@ -24,7 +23,7 @@ When you're developing, it's nice to see the data that is flowing through the ap
   parse.config:debugEnabled()
 ```
 
-This mode will print out the `response` data, but nothing more. If you'd like to see all the response, and some request data, add verbose debugging:
+This mode will print out the response data, but nothing more. If you'd like to see all the response, and some request data, add verbose debugging:
 
 ```lua
   parse.config:debugEnabled()
@@ -43,7 +42,7 @@ Here are some things to look out for in the Parse.com curl examples:
 
 * A __-d__ flag is short for 'data', this pairs with the `:data()` or `:set()` methods.
 * A __-data-urlencode__ flag pairs with the `:options()` method.
-* A __`where={...}`__ will usually pair with the `:where()` method.
+* A __where={...}__ will usually pair with the `:where()` method.
 * Ignore any __-H__ flags (header). These are handled by the plugin.
 * Ignore the url path, you'll use the request object constants.
 
@@ -135,7 +134,7 @@ Generally you would use Lua tables in the plugin, but in certain cases it may be
 ```
 
 !!! warning
-    For *literal strings* in Lua, you must enclose the content with double brackets on each end of the text `[[some string content]]`. Remember that spaces will be preserved so you need to make sure you keep the brackets in tight around the content.
+    For *literal strings* in Lua, you must enclose the content with double brackets on each end of the text __[[some string content]]__. Remember that spaces will be preserved so you need to make sure you keep the brackets in tight around the content.
 
 __Query an Object with raw JSON__
 

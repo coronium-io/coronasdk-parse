@@ -73,7 +73,7 @@ __This is not needed for common keys:__
 
 # Conversions
 
-In the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) you will see lots of usage examples. You need to do table conversions on the `data` you will send from Lua. In the examples, the `data` property is the __-d__ flag, followed by some JSON data.
+In the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) you will see lots of usage examples. You need to do table conversions on the data you will send from Lua. In the examples, the `data` property is the __-d__ flag, followed by some JSON data.
 
 ```bash
   # Parse.com example code
@@ -131,4 +131,4 @@ From __-data-urlencode__ flag to __Lua__:
 ```
 
 !!! note
-    You might have noticed that the `where=` is not part of the query. This parameter is added during request processing.
+    You might have noticed that the __where=__ is not part of the query. This parameter is added during request processing.
