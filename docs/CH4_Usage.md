@@ -7,7 +7,7 @@ The endpoint meta objects are used to provide the url, parameters, etc. for a sp
 ```
 
 !!! note
-    You can browse detailed information in the API section.
+    You can browse detailed information in the [Plugin API](API_Analytics.md) section.
 
 ## Objects [parse.Object]
 

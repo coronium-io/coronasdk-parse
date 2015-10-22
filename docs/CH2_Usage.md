@@ -48,7 +48,7 @@ Here are some things to look out for in the Parse.com curl examples:
 * Ignore the url path, you'll use the request object constants.
 
 !!! tip
-    Be sure to read the [Parse to Lua](CH3_Usage.md) chapter.
+    __Be sure to read the [Parse to Lua](CH3_Usage.md) chapter.__
 
 ## Examples
 
@@ -134,7 +134,8 @@ Generally you would use Lua tables in the plugin, but in certain cases it may be
   :response(cb)
 ```
 
-For *literal strings* in Lua, you must enclose the content with double brackets on each end of the text `[[some string content]]`. Remember that spaces will be preserved so you need to make sure you keep the brackets in tight around the content.
+!!! warning
+    For *literal strings* in Lua, you must enclose the content with double brackets on each end of the text `[[some string content]]`. Remember that spaces will be preserved so you need to make sure you keep the brackets in tight around the content.
 
 __Query an Object with raw JSON__
 
@@ -155,7 +156,7 @@ Even though it's __--data--urlencode__, the __where=__ takes precedence, so you 
   :response(cb)
 ```
 
-!!! important
+!!! tip
     In most cases you should use Lua tables for data, it's better for conversion and error handling. Plus you have a table.
 
 ---
