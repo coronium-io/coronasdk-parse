@@ -7,7 +7,7 @@
 
 ## Getting Started
 
-__[Click Here to Read the Developer Guide to get Started](CH1_Usage.md)__
+__[Click Here to Read the Developer Guide](CH1_Usage.md)__
 
 ---
 
