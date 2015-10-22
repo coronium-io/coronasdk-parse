@@ -4,7 +4,8 @@ The Parse plugin follows a simple pattern for making requests to the Parse REST 
 
 It all starts with a __request__ *to* Parse, and completes with a __response__ *from* Parse. What happens in-between that depends on the API call being used.  __All responses are returned in a Lua table.__
 
-For exact details about each response, please see the Parse REST Guide mentioned earlier, or follow the direct Parse links off the API pages.
+!!! tip
+    For exact details about each response, please see the [Parse REST Guide}(https://www.parse.com/docs/rest/guide) mentioned earlier.
 
 ## parse.request
 
@@ -32,7 +33,8 @@ Example:
 
 # Response
 
-Every `parse.request` must have a `response` *listener* attached to it before it will fire. For example, in the previous example, the `request` is set up, but won't do anything until it has a `response` listener.
+!!! important
+    Every `parse.request` must have a `response` *listener* attached to it before it will fire. For example, in the previous example, the `request` is set up, ___but won't do anything until it has a `response` method added.___
 
 What follows is the bare minimum needed for a working `request`:
 
@@ -72,15 +74,19 @@ The __data object__ to send to Parse. Can be a Lua table or raw JSON string. Whe
 
 __:set( name, value )__
 
-Helper. Sets a value on the __data object__. If the __data object__ is a JSON string, no action is performed. `name` must be a string key.
+Helper. Sets a value on the __data object__. If the __data object__ is a JSON string, no action is performed.
+
+!!! important
+    The `name` key must be a string key.
 
 ---
 
 __:where( query_tbl_or_json )__
 
-When using `query` endpoints, you provide your query parameters using the `:where()` method.
+When using "query" based endpoints, you provide the query parameters using the `:where()` method.
 
-Anytime you see the usage of `{where=...}` in the Parse.com docs, it's an indicator that the method will probably use `:where()` in the Corona plugin request.
+!!! tip
+    Anytime you see the usage of `{where=...}` in the Parse.com docs, it's an indicator that the method will probably use `:where()` in the Corona plugin request.
 
 ---
 
@@ -88,7 +94,8 @@ __:options( { name1 = value1, name2 = value2 } )__
 
 The `:options()` method is used to add values to the request query string. This can be used to add special Parse keys like `count`, `order`, `limit`, etc. The `:options()` method can be added to most requests that return bulk data sets.
 
-When you see the usage of the __--data-urlencode__ curl flag in the Parse.com docs, then this indicates something that should be put in the `:options()` method. The method can accept a Lua table or a raw JSON string.
+!!! tip
+    When you see the usage of the __--data-urlencode__ curl flag in the Parse.com docs, then this indicates something that should be put in the `:options()` method. The method can accept a Lua table or a raw JSON string.
 
 ---
 
