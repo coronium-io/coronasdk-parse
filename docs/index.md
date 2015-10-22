@@ -2,11 +2,12 @@
 
 # Welcome
 
-Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to learn how to use the API.
+!!! important
+    Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to understand how the Parse REST API works.
 
-Following a few rules, all JSON example data can be converted into a Lua table structure.
+__[Getting Started](CH1_Usage.md)__
 
-*You can also use raw JSON strings in certain methods, if preferable.*
+---
 
 ## API Directory
 
