@@ -1,4 +1,4 @@
-# Parse to Lua Rules
+# Parse to Lua Tips
 
 JSON "objects" and Lua tables have a similar looking structure, but differ in the following ways:
 

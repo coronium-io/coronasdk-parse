@@ -4,9 +4,6 @@ The Parse plugin follows a simple pattern for making requests to the Parse REST 
 
 It all starts with a __request__ *to* Parse, and completes with a __response__ *from* Parse. What happens in-between that depends on the API call being used.  __All responses are returned in a Lua table.__
 
-!!! tip
-    For exact details about each response, please see the [Parse REST Guide}(https://www.parse.com/docs/rest/guide) mentioned earlier.
-
 ## parse.request
 
 A `parse.request` requires one of the Parse REST API "endpoint objects" as the first parameter.
@@ -34,7 +31,7 @@ Example:
 # Response
 
 !!! important
-    Every `parse.request` must have a `response` *listener* attached to it before it will fire. For example, in the previous example, the `request` is set up, ___but won't do anything until it has a `response` method added.___
+    Every `parse.request()` must have a response *listener* attached to it before it will fire. For example, in the previous code, the request is set up, ___but won't do anything until it has a `:response()` method added.___
 
 What follows is the bare minimum needed for a working `request`:
 
@@ -68,7 +65,7 @@ __:data( tbl_or_json )__
 The __data object__ to send to Parse. Can be a Lua table or raw JSON string. When viewing the Parse.com docs, the curl __-d__ flag shown in the examples indicates the usage of `:data()` or `:set()` in the Corona plugin request.
 
 !!! danger
-    Setting :data() at anytime will clear any previous data for the request, including data added with the :set() method. There can on be only one __data object__ per request.
+    Setting `:data()` at __anytime__ will clear any previous data for the request, including data added with the `:set()` method. There can on be only one __data object__ per request.
 
 ---
 
@@ -76,8 +73,8 @@ __:set( name, value )__
 
 Helper. Sets a value on the __data object__. If the __data object__ is a JSON string, no action is performed.
 
-!!! important
-    The `name` key must be a string key.
+!!! info
+    The __name__ key must be a string.
 
 ---
 
@@ -86,7 +83,7 @@ __:where( query_tbl_or_json )__
 When using "query" based endpoints, you provide the query parameters using the `:where()` method.
 
 !!! tip
-    Anytime you see the usage of `{where=...}` in the Parse.com docs, it's an indicator that the method will probably use `:where()` in the Corona plugin request.
+    Anytime you see the usage of __{where=...}__ in the Parse.com docs, it's an indicator that the method will probably use `:where()` in the Corona plugin request.
 
 ---
 
@@ -115,7 +112,7 @@ Used as a progress status *listener* for __upload__ and __download__ file events
 
 You can use a variable, chain, or stack the various request methods, whatever fits your coding style best:
 
-*Variable*
+___Variable___
 
 ```lua
   local req = parse.request( parse.Config.get )
@@ -128,7 +125,7 @@ You can use a variable, chain, or stack the various request methods, whatever fi
   end)
 ```
 
-*Chaining*
+___Chaining___
 
 ```lua
   --Setup callback
@@ -143,7 +140,7 @@ You can use a variable, chain, or stack the various request methods, whatever fi
   parse.request( parse.User.get, "1234abcd" ):options({keys='username'}):response(cb)
 ```
 
-*Stacking*
+___Stacking___
 
 ```lua
   parse.request( parse.Objects.query, "Pets" )
