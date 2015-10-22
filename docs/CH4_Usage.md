@@ -6,7 +6,8 @@ The endpoint meta objects are used to provide the url, parameters, etc. for a sp
   local req = parse.request( parse.User.login )
 ```
 
-!!! note "You can browse detailed information in the API section."
+!!! note
+    You can browse detailed information in the API section.
 
 ## Objects [parse.Object]
 

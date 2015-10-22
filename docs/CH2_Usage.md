@@ -47,7 +47,8 @@ Here are some things to look out for in the Parse.com curl examples:
 * Ignore any __-H__ flags (header). These are handled by the plugin.
 * Ignore the url path, you'll use the request object constants.
 
-!!! tip "Be sure to read the [Parse to Lua](CH3_Usage.md) chapter."
+!!! tip
+    Be sure to read the [Parse to Lua](CH3_Usage.md) chapter.
 
 ## Examples
 
@@ -154,7 +155,8 @@ Even though it's __--data--urlencode__, the __where=__ takes precedence, so you 
   :response(cb)
 ```
 
-___In most cases you should use Lua tables for data, it's better for conversion and error handling. Plus you have a table.___
+!!! important
+    In most cases you should use Lua tables for data, it's better for conversion and error handling. Plus you have a table.
 
 ---
 

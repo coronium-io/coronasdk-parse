@@ -65,7 +65,8 @@ __:data( tbl_or_json )__
 
 The __data object__ to send to Parse. Can be a Lua table or raw JSON string. When viewing the Parse.com docs, the curl __-d__ flag shown in the examples indicates the usage of `:data()` or `:set()` in the Corona plugin request.
 
-___Setting :data() at anytime will clear any previous data for the request, including data added with the :set() method.___ There can on be only one __data object__ per request.
+!!! warning
+  Setting :data() at anytime will clear any previous data for the request, including data added with the :set() method. There can on be only one __data object__ per request.
 
 ---
 
