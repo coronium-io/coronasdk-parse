@@ -15,6 +15,9 @@ Upload a file.
 * __filename.ext__
 * __baseDirectory__ (optional, default: system.DocumentsDirectory)
 
+!!! note
+  The baseDirectory is the source directory where your file resides.
+
 ```lua
   parse.upload( "filename.ext" )
   :response()
@@ -23,7 +26,7 @@ Upload a file.
 You can also follow the progress of the upload:
 
 ```lua
-  parse.upload( "filename.ext" )
+  parse.upload( "filename.ext", system.DocumentsDirectory )
   :progress(function(ok, bytesTrans, bytesEst)
     if ok then
       print( bytesTrans, bytesEst)
@@ -50,8 +53,11 @@ Download a file.
 * __save_as_filename.ext__
 * __baseDirectory__ (optional, default: system.DocumentsDirectory)
 
+!!! note
+  The baseDirectory is the destination directory of the download.
+
 ```lua
-  parse.download( "https://files.parsefss.com/...", "filename.ext", system.DocumentsDirectory )
+  parse.download( "https://files.parsefss.com/...", "filename.ext" )
   :response()
 ```
 
