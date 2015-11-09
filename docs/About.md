@@ -15,4 +15,4 @@ All content rights, trade names, trademarks, code, etc. reserved by the original
 
 ---
 
-Parse plugin for Corona SDK - &copy;2015 Chris Byerley - [@develephant](https://twitter.com/develephant)
+Corona SDK Parse Plugin - &copy;2015 Chris Byerley - [@develephant](https://twitter.com/develephant)
