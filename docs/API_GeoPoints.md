@@ -31,7 +31,4 @@ parse.request( parse.Object.query, "Place" )
 :response(cb)
 ```
   
-!!! info "Tip"
-  You can learn more about GeoPoints at the following link:
-
-  [rest/guide#geopoints](https://www.parse.com/docs/rest/guide#geopoints)
+__[Click to Learn more about GeoPoints](https://www.parse.com/docs/rest/guide#geopoints)__
