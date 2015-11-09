@@ -1,10 +1,12 @@
 # Upload Content-Types
 
-The Parse plugin will try to guess the content type of your upload, as long as you pass the extension with the filename.
+The plugin will try to guess the `content-type` of your upload -- which Parse requires -- as long as you pass an extension with the filename (ex: myimage__.png__).
 
-There is no guarantee that Parse supports all of the available types that the plugin can handle.
+There is no guarantee that Parse supports all of the available types that the plugin can recognize. The following table lists the currently supported extensions that the plugin can handle.
 
-## Types
+*You can learn more about [file uploads](API_Files) in the API section*
+
+## Supported Plugin Types
 
 Extension|Content-Type
 ---------|------------
