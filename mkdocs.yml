@@ -1,4 +1,4 @@
-site_name: Parse Corona SDK Plugin
+site_name: Corona SDK Parse Plugin
 site_url: http://parse.develephant.com
 site_author: Chris Byerley
 copyright: Parse plugin for Corona SDK - &copy;2015 Chris Byerley - @develephant
@@ -12,7 +12,7 @@ markdown_extensions:
   - toc:
       permalink: True
 pages:
-  - Corona SDK Parse Plugin - V2: index.md
+  - Corona SDK Parse Plugin: index.md
   - Developer Guide:
       - Chapter 1: CH1_Usage.md
       - Chapter 2: CH2_Usage.md
