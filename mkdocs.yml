@@ -17,8 +17,8 @@ pages:
       - Chapter 1: CH1_Usage.md
       - Chapter 2: CH2_Usage.md
       - Chapter 3: CH3_Usage.md
-      - Chapter 4: Endpoints.md
-      - Chapter 4: Content-Types.md
+      - Endpoints: CH4_Usage.md
+      - Content-Types: CH5_Usage.md
   - Plugin API:
       - Analytics: API_Analytics.md
       - Apps: API_Apps.md
