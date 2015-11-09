@@ -3,7 +3,7 @@
 Parse requires the `content-type` header to be set on an upload. The plugin will try to "guess" the content type based on the file extension, so make sure to include it:
 
 !!! info "Example"
-  myfilename.__png__
+  parse.upload( "myfilename.__png__" )
 
 There is no guarantee that Parse uploads support all of the available types that the plugin can recognize.
 
