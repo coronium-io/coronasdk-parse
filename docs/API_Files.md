@@ -13,17 +13,17 @@ Upload a file.
 *Parameters*
 
 * __filename.ext__
-* __baseDirectory__
+* __baseDirectory__ (optional, default: system.DocumentsDirectory)
 
 ```lua
-  parse.upload( "filename.ext", system.DocumentsDirectory )
+  parse.upload( "filename.ext" )
   :response()
 ```
 
 You can also follow the progress of the upload:
 
 ```lua
-  parse.updload( "filename.ext", system.DocumentsDirectory )
+  parse.upload( "filename.ext" )
   :progress(function(ok, bytesTrans, bytesEst)
     if ok then
       print( bytesTrans, bytesEst)
