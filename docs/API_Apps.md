@@ -11,9 +11,13 @@ Get an App.
 * __applicationId__
 
 ```lua
-  parse.request( parse.App.get, "applicationId" )
+  parse.request( parse.App.get, "AppId" )
+  :header("X-Parse-Email","<PARSE-ACCOUNT-EMAIL>")
+  :header("X-Parse-Password","<PARSE-ACCOUNT-PASSWORD>")
   :response(cb)
 ```
+
+[rest/guide#apps-fetching-apps](https://www.parse.com/docs/rest/guide#apps-fetching-apps)
 
 ## .getAll
 
@@ -21,40 +25,50 @@ Get all Apps.
 
 ```lua
   parse.request( parse.App.getAll )
+  :header("X-Parse-Email","<PARSE-ACCOUNT-EMAIL>")
+  :header("X-Parse-Password","<PARSE-ACCOUNT-PASSWORD>")
   :response(cb)
 ```
+
+[rest/guide#apps-fetching-apps](https://www.parse.com/docs/rest/guide#apps-fetching-apps)
 
 ## .create
 
 Create a new App.
 
 ```lua
-  parse.request( parse.App.create )
-  :response(cb)
+parse.request( parse.App.create )
+:header("X-Parse-Email", "<PARSE-ACCOUNT-EMAIL>")
+:header("X-Parse-Password", "<PARSE-ACCOUNT-PASSWORD>")
+:set("appName", "my new app")
+:set("clientClassCreationEnabled", false)
+:response(cb)
 ```
+
+[rest/guide#apps-creating-apps](https://www.parse.com/docs/rest/guide#apps-creating-apps)
 
 ## .update
 
-Update an App.
+Updates an App.
 
 *Parameters:*
 
 * __applicationId__
 
 ```lua
-  parse.request( parse.App.update, "applicationId" )
+  parse.request( parse.App.update, "AppId" )
+  :header("X-Parse-Email", "<PARSE-ACCOUNT-EMAIL>")
+  :header("X-Parse-Password", "<PARSE-ACCOUNT-PASSWORD>")
+  :set("appName", "updated app name")
+  :set("clientClassCreationEnabled", true)
   :response(cb)
 ```
 
-## .delete
+See the Parse REST link below for more detailed options.
 
-Deletes an App.
+[rest/guide#apps-updating-apps](https://www.parse.com/docs/rest/guide#apps-updating-apps)
 
-*Parameters:*
+### Deleting Apps
 
-* __applicationId__
-
-```lua
-  parse.request( parse.App.delete, "applicationId" )
-  :response(cb)
-```
+!!! info ""
+  You are only able to delete Apps from your Parse.com dashboard.
