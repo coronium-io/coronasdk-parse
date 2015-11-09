@@ -35,12 +35,10 @@ Option|Details|Required
 ------|-------|--------
 :applicationId|The Parse app id|__Yes__
 :restApiKey|The Parse app REST api key|__Yes__
-:clientKey|A Parse Client key|Depends on method
-:accountEmail|Parse login email|Depends on method
-:accountPassword|Parse login password|Depends on method
 :debugEnable|Print incoming data to the terminal|No
 :debugVerbose|Print all incoming data|No
-:masterKey|The App Master Key|Not recommended. Use dashboard.
+:installationId|An install id|Depends on method
+:timeout|Time to wait for a response|No - default: 30
 
 ## Debug Mode
 
@@ -58,6 +56,19 @@ This mode will print out the response data, but nothing more. If you'd like to s
 ```
 
 *If you need to disable debugging temporarily, you can pass `false` to either debug method, or just remove them.*
+
+## Add Config Extras
+
+You can add other values to the config that you can use throughout your app.
+
+```lua
+-- Set custom config value
+parse.config:set("app_title", "MyApp")
+```
+
+-- Get custom config value
+local appTitle = parse.config:get("app_title")
+```
 
 ## Parsing It Out
 
