@@ -8,7 +8,7 @@
 ```lua
 parse.request( parse.Object.create, "Place" )
 :set("__type", "GeoPoint"),
-:se("latitude", 40.0),
+:set("latitude", 40.0),
 :set("longitude", -30.0)
 :response(cb)
 ```
