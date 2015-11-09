@@ -1,23 +1,50 @@
 To get started with a new app, you'll need to gather both your __Application ID__ and your __REST API Key__ from your Parse.com dashboard settings area.
 
-## Setting the Config
+## Using the Config
 
-The plugin Config module handles app level data. We need to add the __Application ID__ and __REST API Key__ to the Config.
+The plugin Config module allows you to store commonly needed values for making Parse requests. If the config values are set, they will automatically be used when needed.
+
+At the bare minimum we must add the Parse app __Application ID__ and __REST API Key__ to the plugin Config (Not to be confused with `parse.Config`).
 
 On the main page, or near the start of your app, you should set your Config values:
 
 ```lua
 local parse = require 'plugin.parse'
 
+--== These settings are mandatory for the plugin
 parse.config:applicationId("your-application-id")
 parse.config:restApiKey("your-rest-api-key")
 ```
 
 *Now the auth data is stored and can be used for requests.*
 
+__Plugin Config Methods__
+
+The plugin config methods are both getters and setters. The only parameter options are __true__ or __false__. You can also remove the method from the code altogether, essentially setting the config option to false.
+
+```lua
+-- Set debug enabled
+parse.config:debugEnabled( true )
+-- Get debug enables value
+local debug_on = parse.config:debugEnabled()
+``
+
+__Config Options__
+
+Option|Details|Required
+------|-------|--------
+:applicationId|The Parse app id|__Yes__
+:restApiKey|The Parse app REST api key|__Yes__
+:clientKey|A Parse Client key|Depends on method
+:accountEmail|Parse login email|Depends on method
+:accountPassword|Parse login password|Depends on method
+:debugEnable|Print incoming data to the terminal|No
+:debugVerbose|Print all incoming data|No
+:masterKey|The App Master Key|Not recommended. Use dashboard.
+
 ## Debug Mode
 
-When you're developing, it's nice to see the data that is flowing through the app. You can turn on the debug flag to get a print out of data in your terminal. This can be set in your Config:
+The plugin config also handles enabling the debugging output, which can be very helpful while building out your app, as the data is output to the terminal automatically. You can turn on the debug flag to get a print out of data in your Config:
 
 ```lua
   parse.config:debugEnabled()
@@ -29,6 +56,8 @@ This mode will print out the response data, but nothing more. If you'd like to s
   parse.config:debugEnabled()
   parse.config:debugVerbose(true)
 ```
+
+*If you need to disable debugging temporarily, you can pass `false` to either debug method, or just remove them.*
 
 ## Parsing It Out
 
