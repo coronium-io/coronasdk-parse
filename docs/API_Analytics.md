@@ -12,6 +12,8 @@ Send an "Application Opened" event to Parse.
   :response(cb)
 ```
 
+[rest/guide#analytics-app-open-analytics](https://www.parse.com/docs/rest/guide#analytics-app-open-analytics)
+
 ## .event
 
 Send a custom event to Parse.
@@ -20,3 +22,5 @@ Send a custom event to Parse.
   parse.request( parse.Analytics.event )
   :response(cb)
 ```
+
+[rest/guide#analytics-custom-analytics](https://www.parse.com/docs/rest/guide#analytics-custom-analytics)
