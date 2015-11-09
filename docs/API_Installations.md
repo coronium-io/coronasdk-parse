@@ -13,6 +13,8 @@ Get an Installation from Parse.
   :response(cb)
 ```
 
+[rest/guide#push-notifications-retrieving-installations](https://www.parse.com/docs/rest/guide#push-notifications-retrieving-installations)
+
 ## .query
 
 Perform an Installation Query.
@@ -23,6 +25,8 @@ Perform an Installation Query.
   :response(cb)
 ```
 
+[rest/guide#push-notifications-querying-installations](https://www.parse.com/docs/rest/guide#push-notifications-querying-installations)
+
 ## .create
 
 Create a new Installation.
@@ -32,6 +36,8 @@ Create a new Installation.
   :data( { color = "Red", name = "Jingles" } )
   :response(cb)
 ```
+
+[rest/guide#push-notifications-installations](https://www.parse.com/docs/rest/guide#push-notifications-installations)
 
 ## .update
 
@@ -47,6 +53,8 @@ Update an Installation by `objectId`.
   :response(cb)
 ```
 
+[rest/guide#push-notifications-updating-installations](https://www.parse.com/docs/rest/guide#push-notifications-updating-installations)
+
 ## .delete
 
 Deletes an Installation by `objectId`.
@@ -59,3 +67,5 @@ Deletes an Installation by `objectId`.
   parse.request( parse.Installation.delete, "Ex4UOSca" )
   :response(cb)
 ```
+
+[rest/guide#push-notifications-deleting-installations](https://www.parse.com/docs/rest/guide#push-notifications-deleting-installations)

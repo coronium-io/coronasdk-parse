@@ -14,6 +14,8 @@ Get an Object from Parse.
   :response(cb)
 ```
 
+[rest/guide#objects-retrieving-objects](https://www.parse.com/docs/rest/guide#objects-retrieving-objects)
+
 ## .query
 
 Perform an Object Query.
@@ -27,6 +29,8 @@ Perform an Object Query.
   :where( { color = "Brown" } )
   :response(cb)
 ```
+
+https://www.parse.com/docs/rest/guide#queries
 
 ## .create
 
@@ -57,6 +61,8 @@ Create a new Object.
   :response(cb)
 ```
 
+[rest/guide#objects-creating-objects](https://www.parse.com/docs/rest/guide#objects-creating-objects)
+
 ## .update
 
 Update an Object.
@@ -73,6 +79,8 @@ Update an Object.
 ```
 See `.create` above for other usages with Lua tables, and JSON strings.
 
+[rest/guide#objects-updating-objects](https://www.parse.com/docs/rest/guide#objects-updating-objects)
+
 ## .delete
 
 Deletes an Object.
@@ -86,3 +94,5 @@ Deletes an Object.
   parse.request( parse.Object.delete, "Pets", "Ex4UOSca" )
   :response(cb)
 ```
+
+[rest/guide#objects-deleting-objects](https://www.parse.com/docs/rest/guide#objects-deleting-objects)

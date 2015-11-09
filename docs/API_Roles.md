@@ -13,6 +13,8 @@ Get a Role.
   :response(cb)
 ```
 
+[rest/guide#roles-retrieving-roles](https://www.parse.com/docs/rest/guide#roles-retrieving-roles)
+
 ## .create
 
 Create a new Role.
@@ -22,6 +24,8 @@ Create a new Role.
   :data( { color = "Red", name = "Jingles" } )
   :response(cb)
 ```
+
+[rest/guide#roles-creating-roles](https://www.parse.com/docs/rest/guide#roles-creating-roles)
 
 ## .update
 
@@ -36,6 +40,8 @@ Update a Role.
   :response(cb)
 ```
 
+[rest/guide#roles-updating-roles](https://www.parse.com/docs/rest/guide#roles-updating-roles)
+
 ## .delete
 
 Deletes an Object.
@@ -48,3 +54,5 @@ Deletes an Object.
   parse.request( parse.Role.delete, "Ex4UOSca" )
   :response(cb)
 ```
+
+[rest/guide#roles-deleting-roles](https://www.parse.com/docs/rest/guide#roles-deleting-roles)

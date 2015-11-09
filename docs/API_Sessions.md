@@ -11,6 +11,8 @@ Get the logged in Session.
   :response(cb)
 ```
 
+[rest/guide#sessions-retrieving-sessions](https://www.parse.com/docs/rest/guide#sessions-retrieving-sessions)
+
 ## .get
 
 Get an Session by `objectId`.
@@ -24,6 +26,8 @@ Get an Session by `objectId`.
   :response(cb)
 ```
 
+[rest/guide#sessions-retrieving-sessions](https://www.parse.com/docs/rest/guide#sessions-retrieving-sessions)
+
 ## .query
 
 Get Session(s) by Query. To fetch all, pass empty table to the `:where` method.
@@ -33,6 +37,8 @@ Get Session(s) by Query. To fetch all, pass empty table to the `:where` method.
   :where( { color = "Red" } )
   :response(cb)
 ```
+
+[rest/guide#sessions-querying-sessions](https://www.parse.com/docs/rest/guide#sessions-querying-sessions)
 
 ## .update
 
@@ -44,6 +50,8 @@ Update a Session by `objectId`.
   :response(cb)
 ```
 
+[rest/guide#sessions-updating-sessions](https://www.parse.com/docs/rest/guide#sessions-updating-sessions)
+
 ## .delete
 
 Delete a Session by `objectId`.
@@ -53,6 +61,8 @@ Delete a Session by `objectId`.
   :response(cb)
 ```
 
+[rest/guide#sessions-deleting-sessions](https://www.parse.com/docs/rest/guide#sessions-deleting-sessions)
+
 ## .logout
 
 Alias to `User` logout.
@@ -61,3 +71,5 @@ Alias to `User` logout.
   parse.request( parse.Session.logout )
   :response(cb)
 ```
+
+[rest/guide#sessions-deleting-sessions](https://www.parse.com/docs/rest/guide#sessions-deleting-sessions)

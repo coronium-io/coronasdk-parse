@@ -8,3 +8,5 @@ Get the Parse application Config.
   parse.request( parse.Config.get )
   :response(cb)
 ```
+
+[rest/guide#config](https://www.parse.com/docs/rest/guide#config)

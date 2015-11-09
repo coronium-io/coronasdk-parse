@@ -1,5 +1,7 @@
 # Triggers [parse.Trigger]
 
+Please read: __[rest/guide#hooks](https://www.parse.com/docs/rest/guide#hooks)__
+
 ## .get
 
 Get a Trigger from Parse.

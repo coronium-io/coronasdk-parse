@@ -13,6 +13,8 @@ Get a Schema from Parse.
   :response(cb)
 ```
 
+[rest/guide#schemas-fetch-the-schema](https://www.parse.com/docs/rest/guide#schemas-fetch-the-schema)
+
 ## .getAll
 
 Get all Schemas.
@@ -21,6 +23,8 @@ Get all Schemas.
   parse.request( parse.Schema.getAll )
   :response(cb)
 ```
+
+[rest/guide#schemas-fetch-the-schema](https://www.parse.com/docs/rest/guide#schemas-fetch-the-schema)
 
 ## .create
 
@@ -35,6 +39,8 @@ Create a new Schema.
   :response(cb)
 ```
 
+[rest/guide#schemas-adding-a-schema](https://www.parse.com/docs/rest/guide#schemas-adding-a-schema)
+
 ## .update
 
 Update a Schema.
@@ -48,6 +54,8 @@ Update a Schema.
   :response(cb)
 ```
 
+[rest/guide#schemas-modifying-the-schema](https://www.parse.com/docs/rest/guide#schemas-modifying-the-schema)
+
 ## .delete
 
 Deletes a Schema.
@@ -60,3 +68,5 @@ Deletes a Schema.
   parse.request( parse.Object.delete, "schemaName" )
   :response(cb)
 ```
+
+[rest/guide#schemas-removing-a-schema](https://www.parse.com/docs/rest/guide#schemas-removing-a-schema)

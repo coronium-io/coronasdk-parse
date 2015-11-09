@@ -9,9 +9,12 @@ Call a Cloud function.
 * __functionName__
 
 ```lua
-  parse.request( parse.Cloud.call, "functionName" )
+  parse.request( parse.Cloud.call, "follow" )
+  :data({username="Charles"})
   :response(cb)
 ```
+
+[rest/guide#cloud-code-cloud-functions](https://www.parse.com/docs/rest/guide#cloud-code-cloud-functions)
 
 ## .job
 
@@ -22,6 +25,9 @@ Start up a Cloud Job.
 * __jobName__
 
 ```lua
-  parse.request( parse.Cloud.job, "jobName" )
+  parse.request( parse.Cloud.job, "userMigration" )
+  :data({plan="paid"})
   :response(cb)
 ```
+
+[rest/guide#cloud-code-background-jobs](https://www.parse.com/docs/rest/guide#cloud-code-background-jobs)
