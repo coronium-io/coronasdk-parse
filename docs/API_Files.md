@@ -8,7 +8,7 @@
 Upload a file.
 
 !!! info "Important"
-  This is a special method, it is accessed directly from then parse namespace, __parse.upload( args )__. It is not a standard `parse.request`.
+  This is a special method, it is accessed directly from the __parse__ namespace, __parse.upload( args )__. It is not a standard `parse.request`.
 
 *Parameters*
 
@@ -45,7 +45,7 @@ You can also follow the progress of the upload:
 Download a file.
 
 !!! info "Important"
-  This is a special method, it is accessed directly from then parse namespace, __parse.download( args )__. It is not a standard `parse.request`.
+  This is a special method, it is accessed directly from the __parse__ namespace, __parse.download( args )__. It is not a standard `parse.request`.
 
 *Parameters*
 
