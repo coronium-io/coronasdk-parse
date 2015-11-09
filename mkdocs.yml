@@ -18,7 +18,6 @@ pages:
       - Chapter 2: CH2_Usage.md
       - Chapter 3: CH3_Usage.md
       - Chapter 4: CH4_Usage.md
-      - Chapter 5: CH5_Usage.md
   - Plugin API:
       - Analytics: API_Analytics.md
       - Apps: API_Apps.md
