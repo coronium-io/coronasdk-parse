@@ -23,6 +23,7 @@ pages:
       - Cloud: API_Cloud.md
       - Config: API_Config.md
       - Files: API_Files.md
+      - GeoPoints: API_GeoPoints.md
       - Hooks: API_Hooks.md
       - Installations: API_Installations.md
       - Objects: API_Objects.md
