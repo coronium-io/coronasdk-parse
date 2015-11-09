@@ -13,10 +13,10 @@ Upload a file.
 *Parameters*
 
 * __filename.ext__
-* __baseDirectory__ (optional, default: system.DocumentsDirectory)
+* __baseDirectory__ (optional, default: `system.DocumentsDirectory`)
 
-!!! note
-  The baseDirectory is the source directory where your file resides.
+
+___The baseDirectory is the source directory where your file resides.___
 
 ```lua
   parse.upload( "filename.ext" )
@@ -51,10 +51,9 @@ Download a file.
 
 * __parse_file_uri__
 * __save_as_filename.ext__
-* __baseDirectory__ (optional, default: system.DocumentsDirectory)
+* __baseDirectory__ (optional, default: `system.DocumentsDirectory`)
 
-!!! note
-  The baseDirectory is the destination directory of the download.
+___The baseDirectory is the destination directory of the download.___
 
 ```lua
   parse.download( "https://files.parsefss.com/...", "filename.ext" )
@@ -78,7 +77,8 @@ You can also follow the progress of the download:
 
 ---
 
-*The following methods __do__ use the common `parse.request` access.*
+!!! info ""
+  *The following methods __do__ use the common `parse.request` access.*
 
 ## .link
 
