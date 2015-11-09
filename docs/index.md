@@ -55,9 +55,7 @@ __If you have :debugEnabled, you can leave out the callback while your testing._
 ```lua
 ...
 parse.config:debugEnabled( true )
-
 ...
-
 parse.request( parse.Object.query, "Blocks" )
 :where({ color = "red" })
 :response()

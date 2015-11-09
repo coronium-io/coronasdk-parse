@@ -27,7 +27,7 @@ The plugin config methods are both getters and setters. The only parameter optio
 parse.config:debugEnabled( true )
 -- Get debug enables value
 local debug_on = parse.config:debugEnabled()
-``
+```
 
 __Config Options__
 
