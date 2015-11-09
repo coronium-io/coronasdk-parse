@@ -3,7 +3,7 @@
 !!! warning "File URIs"
     When you upload a file, Parse will return a special url pointing to your resource. Make sure you store or link it to an Object.
 
-## .upload
+## parse.upload()
 
 Upload a file.
 
@@ -40,7 +40,7 @@ You can also follow the progress of the upload:
 
 ---
 
-## .download
+## parse.download()
 
 Download a file.
 
