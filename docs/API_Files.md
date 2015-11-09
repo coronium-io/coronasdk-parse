@@ -7,6 +7,9 @@
 
 Upload a file.
 
+!!! info "Important"
+  This is a special method, it is accessed directly from then parse namespace, __parse.upload( args )__. It is not a standard `parse.request`.
+
 *Parameters*
 
 * __filename.ext__
@@ -32,9 +35,14 @@ You can also follow the progress of the upload:
   end)
 ```
 
+---
+
 ## .download
 
-Upload a file.
+Download a file.
+
+!!! info "Important"
+  This is a special method, it is accessed directly from then parse namespace, __parse.download( args )__. It is not a standard `parse.request`.
 
 *Parameters*
 
@@ -62,6 +70,10 @@ You can also follow the progress of the download:
   end)
 ```
 
+---
+
+*The following methods __do__ use the common `parse.request` access.*
+
 ## .link
 
 Link a file.
@@ -74,6 +86,8 @@ Link a file.
   parse.request( parse.File.link, "Pets" )
   :response(cb)
 ```
+
+---
 
 ## .delete
 
