@@ -1,6 +1,6 @@
 # GeoPoints
 
-!!! note
+!!! note ""
   A __GeoPoint__ is basically a regular [parse.Object](API_Objects) with a specific data structure, and special queries.
   
 ## Add a location Object
@@ -34,4 +34,4 @@ parse.request( parse.Object.query, "Place" )
 !!! note "Tip"
   You can learn more about GeoPoints at the following link:
 
-  [rest/guide#geopoints](https://www.parse.com/docs/rest/guide#geopoints)]
+  [rest/guide#geopoints](https://www.parse.com/docs/rest/guide#geopoints)
