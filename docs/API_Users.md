@@ -6,8 +6,7 @@ Log in a User.
 
 ```lua
   parse.request( parse.User.login )
-  :set("username", "Chris")
-  :set("password", "1234abcd")
+  :options( { username = "Chris", password = "1234abcd" } )
   :response(cb)
 ```
 
