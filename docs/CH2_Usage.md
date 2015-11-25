@@ -64,7 +64,6 @@ You can add other values to the config that you can use throughout your app.
 ```lua
 -- Set custom config value
 parse.config:set("app_title", "MyApp")
-```
 
 -- Get custom config value
 local appTitle = parse.config:get("app_title")
