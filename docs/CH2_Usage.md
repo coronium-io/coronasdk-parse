@@ -80,13 +80,13 @@ The Parse Plugin can handle every situation, but you will need to learn a bit ab
 
 Here are some things to look out for in the Parse.com curl examples:
 
-* A __-d__ flag is short for 'data', this pairs with the `:data()` or `:set()` methods.
-* A __-data-urlencode__ flag pairs with the `:options()` method.
-* A __where={...}__ will usually pair with the `:where()` method.
-* Ignore any __-H__ flags (header). These are handled by the plugin.
-* Ignore the url path, you'll use the request object constants.
+ * A __-d__ flag is short for 'data', this pairs with the `:data()` or `:set()` methods.
+ * A __-data-urlencode__ flag pairs with the `:options()` method.
+ * A __where={...}__ will usually pair with the `:where()` method.
+ * Ignore any __-H__ flags (header). These are handled by the plugin.
+ * Ignore the url path, you'll use the request object constants.
 
-!!! tip
+!!! tip ""
     __Be sure to read the [Parse to Lua](CH3_Usage.md) chapter.__
 
 ## Examples
