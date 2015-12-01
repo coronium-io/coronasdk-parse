@@ -2,7 +2,7 @@
 
 __A Parse.com plugin for Corona SDK development based on the Parse REST API.__
 
-*Release date: November 2015*
+*Release 0.2.4*
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://parse.develephant.com" data-text="Parse plugin for Corona SDK" data-via="develephant" data-size="large" data-related="coronalabs" data-hashtags="parseit">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
