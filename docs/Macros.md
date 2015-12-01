@@ -229,7 +229,7 @@ Finds a User by supplied username.
 
 ---
 
-#  Searches
+# Key Search
 
 ## .findWhereGreater
 
