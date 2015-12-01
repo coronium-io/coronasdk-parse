@@ -77,12 +77,9 @@ You can also follow the progress of the download:
 
 ---
 
-!!! info ""
-  *The following methods __do__ use the common `parse.request` access.*
-
 ## Linking files
 
-See [.linkFileToUser](Macros/#linkfiletouser)
+See [.linkFileToUser](Macros/#linkfiletouser) and [.linkFileToObject](Macros/#linkfiletoobject)
 
 ---
 
