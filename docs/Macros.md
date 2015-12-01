@@ -6,7 +6,7 @@ While the Parse plugin allows you to go deep into the REST API, there is always 
 
 You can also add your own Macros that can be used globally wherever you can access the parse object. There are a number of common Macros that come by default.
 
-### Users
+# Users
 
 ## .findUserById
 
@@ -47,7 +47,9 @@ Finds a User by supplied username.
   :response(cb)
 ```
 
-### Linking
+---
+
+# Linking
 
 ## .linkObjectToUser
 
@@ -165,7 +167,7 @@ Links one Object to another.
 
 ---
 
-### Counters
+# Counters
 
 Counters allow in place number increment and decrement. To add to the column property supply a positive number. To decrease the value, use a negative number. This will only function properly on number based columns.
 
@@ -207,7 +209,7 @@ ___Removing 5 from the score column___
 
 ---
 
-### Columns
+# Columns
 
 Parse supports a number of special columns that you can run unique queries on. These Macros help in the creation of these columns.
 
@@ -296,7 +298,7 @@ Adds an ISO compliant Date column.
 
 ---
 
-### Auth Data
+# Auth Data
 
 ## .addTwitterAuth
 
@@ -356,7 +358,9 @@ Add a UUID as a custom authentication method.
   :response(cb)
 ```
 
-### Searches
+---
+
+#  Searches
 
 ## .findWhereGreater
 
@@ -476,7 +480,9 @@ Find a Class key equal to __false__.
   :response(cb)
 ```
 
-### Geo Searches
+---
+
+# Geo Searches
 
 ___Geo Searches require a [GeoPoint](API_GeoPoint) column on the class.___
 
@@ -559,6 +565,8 @@ Find Objects in a radius, within the specified radians.
   parse.macro.geoSearchWithinRadians( 'Sales', 10.0, -20.0, 123 )
   :response(cb)
 ```
+
+---
 
 # Custom Macros
 
