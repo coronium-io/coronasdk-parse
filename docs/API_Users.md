@@ -108,7 +108,7 @@ Queues up a password reset request based on `email`.
 
 ```lua
   parse.request( parse.User.requestPasswordReset )
-  :options( { email = "spock@enterprise.net" } )
+  :set("email", "spock@enterprise.net")
   :response(cb)
 ```
 
