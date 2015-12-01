@@ -55,7 +55,7 @@ Link an arbitrary Object to a User.
 
 *Parameters:*
 
-* __linkCol__
+* __linkColLabel__
 * __className__
 * __objectId__
 * __userId__ (objectId)
@@ -71,7 +71,7 @@ Link an uploaded File object to a User.
 
 *Parameters:*
 
-* __fileCol__
+* __fileColLabel__
 * __fileUri__
 * __userId__ (objectId)
 
@@ -89,7 +89,7 @@ Link an Installation to a User.
 
 *Parameters:*
 
-* __installCol__
+* __installColLabel__
 * __installId__ (objectId)
 * __userId__ (objectId)
 
@@ -104,7 +104,7 @@ Link a File to an arbitrary Object.
 
 *Parameters:*
 
-* __fileCol__
+* __fileColLabel__
 * __fileUri__
 * __className__
 * __objectId__
@@ -120,7 +120,7 @@ Link a User to an arbitrary Object.
 
 *Parameters:*
 
-* __userCol__
+* __userColLabel__
 * __className__
 * __objectId__
 * __userId__ (objectId)
@@ -136,7 +136,7 @@ Link an arbitrary Object to a User.
 
 *Parameters:*
 
-* __objectCol__
+* __objectColLabel__
 * __className__
 * __objectId__
 * __userId__ (objectId)
@@ -152,7 +152,7 @@ Links one Object to another.
 
 *Parameters:*
 
-* __objectCol__
+* __objectColLabel__
 * __className__
 * __objectId__
 * __toClassName__
@@ -173,11 +173,12 @@ Counters allow in place number increment and decrement. To add to the column pro
 
 *Parameters:*
 
-* __counterCol__
+* __counterColLabel__
 * __amount__ (can be negative)
 * __className__
 * __objectId__
 
+___Adding 1 to the score column___
 ___Adding 1 to the score column___
 
 ```lua
@@ -187,6 +188,7 @@ ___Adding 1 to the score column___
 ```
 
 ___Adding 10 to the score column___
+___Adding 10 to the score column___
 
 ```lua
   parse.macro.updateCounter('score', 10, 'Scores', 'score_id')
@@ -194,6 +196,7 @@ ___Adding 10 to the score column___
   -- score is now 11
 ```
 
+___Removing 5 from the score column___
 ___Removing 5 from the score column___
 
 ```lua
@@ -214,7 +217,7 @@ Add a Pointer column. This column is used to link objects.
 
 *Parameters:*
 
-* __pointerCol__
+* __pointerColLabel__
 * __pointerClass__ (className)
 * __pointerId__ (objectId)
 * __className__
@@ -231,7 +234,7 @@ Add a Relation Column. Creates relations between Class types.
 
 *Parameters:*
 
-* __relationCol__
+* __relationColLabel__
 * __relatedClassName__
 * __className__
 * __objectId__
@@ -247,7 +250,7 @@ Add a GeoPoint column allowing for specialized location queries.
 
 *Parameter:*
 
-* __geoPointCol__
+* __geoPointColLabel__
 * __latitude__ (Number)
 * __longitude__ (Number)
 * __className__
@@ -264,7 +267,7 @@ Add a Binary column for storing Base64 encoded data.
 
 *Parameters:*
 
-* __binaryCol__
+* __binaryColLabel__
 * __base64Data__
 
 ```lua
@@ -278,7 +281,7 @@ Adds an ISO compliant Date column.
 
 *Parameters:*
 
-* __dateCol__
+* __dateColLabel__
 * __isoDate__
 * __className__
 * __objectId__
