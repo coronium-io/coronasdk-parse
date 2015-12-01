@@ -180,7 +180,7 @@ Counters allow in place number increment and decrement. To add to the column pro
 * __className__
 * __objectId__
 
-___Adding 1 to the score column___
+
 ___Adding 1 to the score column___
 
 ```lua
@@ -190,7 +190,6 @@ ___Adding 1 to the score column___
 ```
 
 ___Adding 10 to the score column___
-___Adding 10 to the score column___
 
 ```lua
   parse.macro.updateCounter('score', 10, 'Scores', 'score_id')
@@ -198,7 +197,6 @@ ___Adding 10 to the score column___
   -- score is now 11
 ```
 
-___Removing 5 from the score column___
 ___Removing 5 from the score column___
 
 ```lua
