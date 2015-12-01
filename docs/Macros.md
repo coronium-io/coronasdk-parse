@@ -387,7 +387,7 @@ Find a Class key less than the supplied value.
 
 ## .findWhereEqual
 
-Find a Class key greater than the supplied value.
+Find a Class key equal to the supplied value.
 
 *Parameters:*
 
