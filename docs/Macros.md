@@ -399,6 +399,8 @@ Parse supports a number of special columns that you can run unique queries on. T
 
 Add a Pointer column. This column is used to link objects.
 
+___There are a number of higher level [linking methods](#linking) above.___
+
 *Parameters:*
 
 * __pointerColLabel__
