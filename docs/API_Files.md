@@ -80,18 +80,9 @@ You can also follow the progress of the download:
 !!! info ""
   *The following methods __do__ use the common `parse.request` access.*
 
-## .link
+## Linking files
 
-Link a file.
-
-*Parameters:*
-
-* __class__
-
-```lua
-  parse.request( parse.File.link, "Pets" )
-  :response(cb)
-```
+See [.linkFileToUser](Macros/#linkfiletouser)
 
 ---
 
