@@ -32,7 +32,7 @@ You can also follow the progress of the upload:
       print( bytesTrans, bytesEst)
     end
   end)
-  :response(function( res )
+  :response(function( ok, res, info )
     print('all done')
     parse.trace( res )
   end)
@@ -69,7 +69,7 @@ You can also follow the progress of the download:
       print( bytesTrans, bytesEst)
     end
   end)
-  :response(function( res )
+  :response(function( ok, res, info )
     print('all done')
     parse.trace( res )
   end)
