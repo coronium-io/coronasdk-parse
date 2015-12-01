@@ -78,19 +78,19 @@ Update a User by `objectId`.
 
 __Linking an Object to a User:__
 
-User must be logged in first. See [.login](#.login).
+User must be logged in first. See [parse.User.login](#login).
 
 ```lua
-parse.request( parse.User.update, "objioxr2gh" )
-:data({
-  toyId = -- User column name to set the link on.
-  {
-    ["__type"] = "Pointer", -- Column must be "Pointer" type.
-    className = "Toy",
-    objectId = "cHF2F7Hp1O"
-  }
-})
-:response(cb)
+  parse.request( parse.User.update, "objioxr2gh" )
+  :data({
+    toyId = -- User column name to set the link on.
+    {
+      ["__type"] = "Pointer", -- Column must be "Pointer" type.
+      className = "Toy",
+      objectId = "cHF2F7Hp1O"
+    }
+  })
+  :response(cb)
 ```
 
 ## .delete
