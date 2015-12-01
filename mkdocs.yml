@@ -17,8 +17,8 @@ pages:
       - Chapter 1: CH1_Usage.md
       - Chapter 2: CH2_Usage.md
       - Chapter 3: CH3_Usage.md
-      - Using Macros: Macros.md
-      - Batch Ops: Batches.md
+      - Macro Reference: Macros.md
+      - Batch Operations: Batches.md
   - Plugin API:
       - Analytics: API_Analytics.md
       - Apps: API_Apps.md

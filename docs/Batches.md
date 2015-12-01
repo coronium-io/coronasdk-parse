@@ -1,6 +1,6 @@
 <style>.codehilite{padding-bottom:6px;}</style>
 
-# Object Batching
+# Batches [parse.batch]
 
 Parse allows batching of certain operations on Objects. You can send up to 50 __create__, __update__, or __delete__ calls using the batch method.
 
