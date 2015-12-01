@@ -584,9 +584,9 @@ Adds a new request Macro to the system.
 * __macroRequest__
 
 ```lua
-  parse.macro.add( "getUsersOlderThan", function( age )
+  parse.macro.add( "getUsersOlderThan", function( age_limit )
     return parse.request( parse.User.query )
-    :where( { age = ["$gt"] = age } )
+    :where( { age = { ["$gt"] = age_limit } } )
   end)
 ```
 
