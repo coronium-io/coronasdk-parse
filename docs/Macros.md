@@ -6,49 +6,6 @@ While the Parse plugin allows you to go deep into the REST API, there is always 
 
 You can also add your own Macros that can be used globally wherever you can access the parse object. There are a number of common Macros that come by default.
 
-# Users
-
-## .findUserById
-
-Finds a User by supplied id.
-
-*Parameters:*
-
-* __userId__ (objectId)
-
-```lua
-  parse.macro.findUserById( 'user_id' )
-  :response(cb)
-```
-
-## .findUserByEmail
-
-Finds a User by supplied email.
-
-*Parameters:*
-
-* __email__
-
-```lua
-  parse.macro.findUserByEmail( 'user@email.com' )
-  :response(cb)
-```
-
-## .findUserByUsername
-
-Finds a User by supplied username.
-
-*Parameters:*
-
-* __username__
-
-```lua
-  parse.macro.findUserByUsername( 'user_name' )
-  :response(cb)
-```
-
----
-
 # Linking
 
 ## .linkObjectToUser
@@ -162,6 +119,233 @@ Links one Object to another.
 
 ```lua
   parse.macro.linkObjects('ageGroup', 'Toy', 'toy_id', 'Group', 'group_id')
+  :response(cb)
+```
+
+---
+
+# Auth Data
+
+## .addTwitterAuth
+
+Add Twitter Authentication data to a User.
+
+*Parameters:*
+
+* __authDataTable__
+* __userId__ (objectId)
+
+```lua
+  local auth_data =
+  {
+    id = "12345678",
+    screen_name = "ParseIt",
+    consumer_key = "SaMpLeId3X7eLjjLgWEw",
+    consumer_secret = "SaMpLew55QbMR0vTdtOACfPXa5UdO2THX1JrxZ9s3c",
+    auth_token = "12345678-SaMpLeTuo3m2avZxh5cjJmIrAfx4ZYyamdofM7IjU",
+    auth_token_secret = "SaMpLeEb13SpRzQ4DAIzutEkCE2LBIm2ZQDsP3WUU"
+  }
+
+  parse.macro.addTwitterAuth( auth_data, 'user_id' )
+  :response(cb)
+```
+
+## .addFacebookAuth
+
+Add Facebook Authentication data to a User.
+
+*Parameters:*
+
+* __authDataTable__
+* __userId__ (objectId)
+
+```lua
+  local auth_data =
+  {
+    id = "123456789",
+    access_token = "SaMpLeAAibS7Q55...",
+    expiration_date = "2012-02-28T23:49:36.353Z"
+  }
+  
+  parse.macro.addFacebookAuth( auth_data, 'user_id' )
+  :response(cb)
+```
+
+## .addAnonAuth
+
+Add a UUID as a custom authentication method.
+
+*Parameters:*
+
+* __uuid__ (lowercase-alpha-numeric)
+* __userId__ (objectId)
+
+```lua
+  parse.macro.addAnonAuth('uo3m2avzxh5cj...', 'user_id')
+  :response(cb)
+```
+---
+
+# Users
+
+## .findUserById
+
+Finds a User by supplied id.
+
+*Parameters:*
+
+* __userId__ (objectId)
+
+```lua
+  parse.macro.findUserById( 'user_id' )
+  :response(cb)
+```
+
+## .findUserByEmail
+
+Finds a User by supplied email.
+
+*Parameters:*
+
+* __email__
+
+```lua
+  parse.macro.findUserByEmail( 'user@email.com' )
+  :response(cb)
+```
+
+## .findUserByUsername
+
+Finds a User by supplied username.
+
+*Parameters:*
+
+* __username__
+
+```lua
+  parse.macro.findUserByUsername( 'user_name' )
+  :response(cb)
+```
+
+---
+
+#  Searches
+
+## .findWhereGreater
+
+Find a Class key greater than the supplied value.
+
+*Parameters:*
+
+* __className__
+* __key__
+* __value__
+
+```lua
+  parse.macro.findWhereGreater( 'Toys', 'stock', 12 )
+  :response(cb)
+```
+
+## .findWhereLess
+
+Find a Class key less than the supplied value.
+
+*Parameters:*
+
+* __className__
+* __key__
+* __value__
+
+```lua
+  parse.macro.findWhereLess( 'Toys', 'stock', 3 )
+  :response(cb)
+```
+
+## .findWhereEqual
+
+Find a Class key equal to the supplied value.
+
+*Parameters:*
+
+* __className__
+* __key__
+* __value__
+
+```lua
+  parse.macro.findWhereEqual( 'Toys', 'kind', 'car' )
+  :response(cb)
+```
+
+## .findWhereEqualOrGreater
+
+Find a Class key equal to or greater than the supplied value.
+
+*Parameters:*
+
+* __className__
+* __key__
+* __value__
+
+```lua
+  parse.macro.findWhereEqualOrGreater( 'Toys', 'stock', 5 )
+  :response(cb)
+```
+
+## .findWhereEqualOrLess
+
+Find a Class key equal to or less than the supplied value.
+
+*Parameters:*
+
+* __className__
+* __key__
+* __value__
+
+```lua
+  parse.macro.findWhereEqualOrLess( 'Toys', 'stock', 5 )
+  :response(cb)
+```
+
+## .findWhereNotEqual
+
+Find a Class key __not__ equal to the supplied value.
+
+*Parameters:*
+
+* __className__
+* __key__
+* __value__
+
+```lua
+  parse.macro.findWhereNotEqual( 'Toys', 'color', 'red' )
+  :response(cb)
+```
+
+## .findWhereTrue
+
+Find a Class key equal to __true__.
+
+*Parameters:*
+
+* __className__
+* __key__
+
+```lua
+  parse.macro.findWhereTrue( 'Toys', 'new' )
+  :response(cb)
+```
+
+## .findWhereFalse
+
+Find a Class key equal to __false__.
+
+*Parameters:*
+
+* __className__
+* __key__
+
+```lua
+  parse.macro.findWhereFalse( 'Toys', 'inStock' )
   :response(cb)
 ```
 
@@ -292,191 +476,7 @@ Adds an ISO compliant Date column.
 ```
 
 !!! note "ISO Dates"
-  Parse is very specific about its Date format. You can generate a valid date using `parse.tools.timestampToISODate()`. See [.timestampToISODate](#)
-
----
-
-# Auth Data
-
-## .addTwitterAuth
-
-Add Twitter Authentication data to a User.
-
-*Parameters:*
-* __authDataTable__
-* __userId__ (objectId)
-
-```lua
-  local auth_data =
-  {
-    id = "12345678",
-    screen_name = "ParseIt",
-    consumer_key = "SaMpLeId3X7eLjjLgWEw",
-    consumer_secret = "SaMpLew55QbMR0vTdtOACfPXa5UdO2THX1JrxZ9s3c",
-    auth_token = "12345678-SaMpLeTuo3m2avZxh5cjJmIrAfx4ZYyamdofM7IjU",
-    auth_token_secret = "SaMpLeEb13SpRzQ4DAIzutEkCE2LBIm2ZQDsP3WUU"
-  }
-
-  parse.macro.addTwitterAuth( auth_data, 'user_id' )
-  :response(cb)
-```
-
-## .addFacebookAuth
-
-Add Facebook Authentication data to a User.
-
-*Parameters:*
-
-* __authDataTable__
-* __userId__ (objectId)
-
-```lua
-  local auth_data =
-  {
-    id = "123456789",
-    access_token = "SaMpLeAAibS7Q55...",
-    expiration_date = "2012-02-28T23:49:36.353Z"
-  }
-  
-  parse.macro.addFacebookAuth( auth_data, 'user_id' )
-  :response(cb)
-```
-
-## .addAnonAuth
-
-Add a UUID as a custom authentication method.
-
-*Parameters:*
-
-* __uuid__ (lowercase-alpha-numeric)
-* __userId__ (objectId)
-
-```lua
-  parse.macro.addAnonAuth('uo3m2avzxh5cj...', 'user_id')
-  :response(cb)
-```
-
----
-
-#  Searches
-
-## .findWhereGreater
-
-Find a Class key greater than the supplied value.
-
-*Parameters:*
-
-* __className__
-* __key__
-* __value__
-
-```lua
-  parse.macro.findWhereGreater( 'Toys', 'stock', 12 )
-  :response(cb)
-```
-
-## .findWhereLess
-
-Find a Class key less than the supplied value.
-
-*Parameters:*
-
-* __className__
-* __key__
-* __value__
-
-```lua
-  parse.macro.findWhereLess( 'Toys', 'stock', 3 )
-  :response(cb)
-```
-
-## .findWhereEqual
-
-Find a Class key equal to the supplied value.
-
-*Parameters:*
-
-* __className__
-* __key__
-* __value__
-
-```lua
-  parse.macro.findWhereEqual( 'Toys', 'kind', 'car' )
-  :response(cb)
-```
-
-## .findWhereEqualOrGreater
-
-Find a Class key equal to or greater than the supplied value.
-
-*Parameters:*
-
-* __className__
-* __key__
-* __value__
-
-```lua
-  parse.macro.findWhereEqualOrGreater( 'Toys', 'stock', 5 )
-  :response(cb)
-```
-
-## .findWhereEqualOrLess
-
-Find a Class key equal to or less than the supplied value.
-
-*Parameters:*
-
-* __className__
-* __key__
-* __value__
-
-```lua
-  parse.macro.findWhereEqualOrLess( 'Toys', 'stock', 5 )
-  :response(cb)
-```
-
-## .findWhereNotEqual
-
-Find a Class key __not__ equal to the supplied value.
-
-*Parameters:*
-
-* __className__
-* __key__
-* __value__
-
-```lua
-  parse.macro.findWhereNotEqual( 'Toys', 'color', 'red' )
-  :response(cb)
-```
-
-## .findWhereTrue
-
-Find a Class key equal to __true__.
-
-*Parameters:*
-
-* __className__
-* __key__
-
-```lua
-  parse.macro.findWhereTrue( 'Toys', 'new' )
-  :response(cb)
-```
-
-## .findWhereFalse
-
-Find a Class key equal to __false__.
-
-*Parameters:*
-
-* __className__
-* __key__
-
-```lua
-  parse.macro.findWhereFalse( 'Toys', 'inStock' )
-  :response(cb)
-```
+   Parse is very specific about its Date format. You can generate a valid date using `parse.tools.timestampToISODate()`. See [.timestampToISODate](#)
 
 ---
 
