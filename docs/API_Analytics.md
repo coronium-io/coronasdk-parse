@@ -19,7 +19,7 @@ Send an "Application Opened" event to Parse.
 Send a custom event to Parse. (See the Parse link below to learn more about using custom events.)
 
 ```lua
-  parse.request( parse.Analytics.event )
+  parse.request( parse.Analytics.event, "EventName" )
   :data({dimensions:{
     priceRange = "1000-1500",
     source = "craigslist",
