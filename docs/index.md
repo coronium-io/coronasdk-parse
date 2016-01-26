@@ -2,7 +2,7 @@
 
 __A Parse.com plugin for Corona SDK development exposing the entire Parse REST API.__
 
-*Release 0.2.4*
+*Release 0.2.5*
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://parse.develephant.com" data-text="Parse plugin for Corona SDK" data-via="develephant" data-size="large" data-related="coronalabs" data-hashtags="parseit">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -11,7 +11,7 @@ __A Parse.com plugin for Corona SDK development exposing the entire Parse REST A
 
 !!! important
     Read through the [__Parse REST API guide__](https://www.parse.com/docs/rest/guide) at Parse.com to understand how the Parse REST API works.
-    
+
 ## Quick Start
 
 When you build using the Corona Simulator, the server automatically takes care of integrating the plugin into your project.
