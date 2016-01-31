@@ -126,6 +126,9 @@ Links one Object to another.
 
 # Auth Data
 
+!!! warning "Using Parse-Server?"
+    __The self-hosted Parse-Server does not support Facebook or Twitter login.__
+
 ## .addTwitterAuth
 
 Add Twitter Authentication data to a User.
@@ -166,7 +169,7 @@ Add Facebook Authentication data to a User.
     access_token = "SaMpLeAAibS7Q55...",
     expiration_date = "2012-02-28T23:49:36.353Z"
   }
-  
+
   parse.macro.addFacebookAuth( auth_data, 'user_id' )
   :response(cb)
 ```
