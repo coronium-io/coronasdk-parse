@@ -11,8 +11,7 @@ Generate an installation identifier from string key that is Parse compatible.
 * __input__
 
 ```lua
-  parse.tools.generateInstallationId( "a_string_input" )
-  :response(cb)
+  local id = parse.tools.generateInstallationId( "a_string_input" )
 ```
 
 ## More Tools
