@@ -34,7 +34,7 @@ pages:
       - Triggers: API_Triggers.md
       - Users: API_Users.md
   - Extended API:
-    - Batchs: Batches.md
+    - Batches: Batches.md
     - Config: Config.md
     - Macros: Macros.md
     - Tools: Tools.md
