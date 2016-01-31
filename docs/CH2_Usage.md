@@ -14,7 +14,7 @@ local parse = require 'plugin.parse'
 --== These settings are mandatory for the plugin
 parse.config:applicationId("your-application-id")
 parse.config:restApiKey("your-rest-api-key")
---== Option setting for external Parse-Server
+--== Optional setting for external Parse-Server
 parse.config:cloudAddress("https://my.parse.server:port/api_prefix")
 ```
 
@@ -106,7 +106,7 @@ __Logging in a User__
     https://api.parse.com/1/login
 ```
 
-In this login example from Parse.com, we can see the structure of a "GET" method. You should notice the two __--data--urlencode__ values. This gives us a clue that we should us the `:options()` method. Since this is the login method, we need to use the correct endpoint object (See [Endpoints](CH4_Usage.md)). In this case that would be `parse.User.login`. Let's see what it would look like in the client code:
+In this login example from Parse.com, we can see the structure of a "GET" method. You should notice the two __--data--urlencode__ values. This gives us a clue that we should us the `:options()` method. Since this is the login method, we need to use the correct endpoint object. In this case that would be `parse.User.login`. Let's see what it would look like in the client code:
 
 ```lua
   --Lua
