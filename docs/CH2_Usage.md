@@ -14,6 +14,8 @@ local parse = require 'plugin.parse'
 --== These settings are mandatory for the plugin
 parse.config:applicationId("your-application-id")
 parse.config:restApiKey("your-rest-api-key")
+--== Option setting for external Parse-Server
+parse.config:cloudAddress("https://my.parse.server:port/api_prefix")
 ```
 
 *Now the auth data is stored and can be used for requests.*
@@ -33,6 +35,7 @@ __Config Options__
 
 Option|Details|Required
 ------|-------|--------
+:cloudAddress|External Parse-Server endpoint|Depends on hosting
 :applicationId|The Parse app id|__Yes__
 :restApiKey|The Parse app REST api key|__Yes__
 :debugEnable|Print incoming data to the terminal|No
@@ -252,7 +255,7 @@ __Sign up and login with Twitter__
         }' \
     https://api.parse.com/1/users
 ```
-  
+
 In __Lua__...
 
 

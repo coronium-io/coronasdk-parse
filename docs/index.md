@@ -2,7 +2,7 @@
 
 __A Parse.com plugin for Corona SDK development exposing the entire Parse REST API.__
 
-*Release 0.2.5*
+*Release 0.2.7*
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://parse.develephant.com" data-text="Parse plugin for Corona SDK" data-via="develephant" data-size="large" data-related="coronalabs" data-hashtags="parseit">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -37,6 +37,9 @@ Create a __main.lua__ and fill it like so:
 
 ```lua
 local parse = require('plugin.parse')
+--== Using self-hosted Parse-Server (optional)
+parse.config:cloudAddress("https://your.parse.server:PORT/API_PREFIX")
+--== Application Keys
 parse.config:applicationId("PARSE_APP_ID")
 parse.config:restApiKey("PARSE_REST_KEY")
 
@@ -71,6 +74,8 @@ __[Click Here to Read the Developer Guide](CH1_Usage.md)__
 
 ## API Directory
 
+### Parse API
+
 #### [Objects](API_Objects.md)
 #### [Users](API_Users.md)
 #### [Sessions](API_Sessions.md)
@@ -85,3 +90,10 @@ __[Click Here to Read the Developer Guide](CH1_Usage.md)__
 #### [Apps](API_Apps.md)
 #### [Hooks](API_Hooks.md)
 #### [Triggers](API_Triggers.md)
+
+### Extended API
+
+#### [Batches](Batches.md)
+#### [Config/Debug](Config.md)
+#### [Macros](Macros.md)
+#### [Tools](Tools.md)

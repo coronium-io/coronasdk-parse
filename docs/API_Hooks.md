@@ -1,5 +1,8 @@
 # Hooks [parse.Hook]
 
+!!! warning Using Parse-Server?
+    __The self-hosted Parse-Server does not support Hooks.__
+
 Please read: __[rest/guide#hooks](https://www.parse.com/docs/rest/guide#hooks)__
 
 ## .get

@@ -17,8 +17,6 @@ pages:
       - Chapter 1: CH1_Usage.md
       - Chapter 2: CH2_Usage.md
       - Chapter 3: CH3_Usage.md
-      - Macro Reference: Macros.md
-      - Batch Operations: Batches.md
   - Plugin API:
       - Analytics: API_Analytics.md
       - Apps: API_Apps.md
@@ -35,5 +33,10 @@ pages:
       - Sessions: API_Sessions.md
       - Triggers: API_Triggers.md
       - Users: API_Users.md
+  - Extended API:
+    - Batchs: Batches.md
+    - Config: Config.md
+    - Macros: Macros.md
+    - Tools: Tools.md
   - Content-Types: CH5_Usage.md
   - About Plugin: About.md

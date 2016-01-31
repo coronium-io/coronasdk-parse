@@ -1,5 +1,8 @@
 # Schemas [parse.Schema]
 
+!!! warning Using Parse-Server?
+    __The self-hosted Parse-Server does not support Schemas.__
+
 ## .get
 
 Get a Schema from Parse.

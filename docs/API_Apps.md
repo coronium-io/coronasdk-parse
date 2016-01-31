@@ -2,6 +2,9 @@
 
 # Apps [parse.App]
 
+!!! warning Using Parse-Server?
+    __The self-hosted Parse-Server does not support Apps.__
+
 ## .get
 
 Get an App.

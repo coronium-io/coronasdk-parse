@@ -1,5 +1,8 @@
 # Triggers [parse.Trigger]
 
+!!! warning Using Parse-Server?
+    __The self-hosted Parse-Server does not support Triggers.__
+
 Please read: __[rest/guide#hooks](https://www.parse.com/docs/rest/guide#hooks)__
 
 ## .get
