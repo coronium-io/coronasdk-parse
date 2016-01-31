@@ -1,5 +1,8 @@
 # Roles [parse.Role]
 
+!!! warning "Using Parse-Server?"
+    __The self-hosted Parse-Server does not support the Roles module.__
+
 ## .get
 
 Get a Role.

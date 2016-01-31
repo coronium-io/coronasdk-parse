@@ -1,7 +1,7 @@
 # Config [parse.Config]
 
-!!! warning Using Parse-Server?
-    __The self-hosted Parse-Server does not support Config.__
+!!! warning "Using Parse-Server?"
+    __The self-hosted Parse-Server does not support the Config module.__
 
 ## .get
 

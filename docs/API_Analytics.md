@@ -2,6 +2,9 @@
 
 # Analytics [parse.Analytics]
 
+!!! warning "Using Parse-Server?"
+    __The self-hosted Parse-Server does not support the Analytics module.__
+
 ## .AppOpened
 
 Send an "Application Opened" event to Parse.
