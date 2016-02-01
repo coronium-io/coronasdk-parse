@@ -1,6 +1,6 @@
 <style>.codehilite{padding-top:2px;padding-bottom:6px;}</style>
 
-__A Parse.com plugin for Corona SDK development exposing the entire Parse REST API.__
+__A Parse.com and Parse-Server plugin for Corona SDK development.__
 
 *Release 0.2.7*
 
