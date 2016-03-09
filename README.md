@@ -2,4 +2,4 @@
 
 *Documentation pulled by readthedocs.org*
 
-[Parse CoronaSDk Plugin Docs](https://parse.develephant.com)
+[Parse CoronaSDK Plugin Docs](http://parse.develephant.com)
